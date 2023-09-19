@@ -13,10 +13,10 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe é organizada da seguinte maneira:
 
-- Scrum Master: Cristiane Queiroz, Thiago Carvalho Sobroza
+- Scrum Master: Cristiane Queiroz de Brito, Thiago Carvalho Sobroza
 - Product Owner: Nico Rocha da costa
-- Equipe de Desenvolvimento: Jessica Hora dos Santos, Marcos Vinicio Araujo Almeida, Nico Rocha da Costa, Thiago Bastani Pontel Oliveira, Thiago Carvalho Sobroza, Cristiane Queiroz
-- Equipe de Design: Nico Rocha da Costa, Cristiane Queiroz
+- Equipe de Desenvolvimento: Jessica Hora dos Santos, Marcos Vinicio Araujo Almeida, Nico Rocha da Costa, Thiago Bastani Pontel Oliveira, Thiago Carvalho Sobroza, Cristiane Queiroz de Brito
+- Equipe de Design: Nico Rocha da Costa, Cristiane Queiroz de Brito
 
 ### Processo
 
