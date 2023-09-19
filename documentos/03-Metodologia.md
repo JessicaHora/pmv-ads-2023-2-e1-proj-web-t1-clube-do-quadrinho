@@ -11,17 +11,12 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 
 ### Divisão de Papéis
 
-A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
+A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe é organizada da seguinte maneira:
+
 - Scrum Master: Cristiane Queiroz, Thiago Carvalho Sobroza
 - Product Owner: Nico Rocha da costa
 - Equipe de Desenvolvimento: Jessica Hora dos Santos, Marcos Vinicio Araujo Almeida, Nico Rocha da Costa, Thiago Bastani Pontel Oliveira, Thiago Carvalho Sobroza, Cristiane Queiroz
 - Equipe de Design: Nico Rocha da Costa, Cristiane Queiroz
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 ### Processo
 
