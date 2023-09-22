@@ -52,16 +52,21 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
   
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
+- Editor de Codigos
+- Ferramenta de Comunicacao
+- Ferramenta de Design de interface
+
+O editor de codigos sera usado para escrever o codigo fonte e ter um vercionamento para os arquivos, a ferramenta de cominicacao sera usada para o trabalho em equipe e para realizacao de cerimonias necessarias,
+a ferramenta de design de interface sera utilizada para a criacao de diagramas e para o usuario ter um entendimento melhor da interacao de usuario com a aplicacao.
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
 | AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
+| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/tree/main/codigo-fonte|
+| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/tree/main/documentos|
+| Projeto de Interface                | Figma                              | https://www.figma.com/file/JIL7RZupf8ItrbUAHomdCg/User-Flow---Cube-do-Quadrinho?type=design&node-d=603%3A742&mode=design&t=8SW6guByhhBbZxMm-1|
+| Gerenciamento do Projeto            | GitHub Projects                    |https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/635|
 | Hospedagem                          | GitHub Pages                       | http://....                            |
 
 
