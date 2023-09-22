@@ -1,25 +1,25 @@
-# Título do Projeto
+Clube do Quadrinho
 
-`CURSO`
+ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
 
-`DISCIPLINA`
+Projeto: Desenvolvimento de uma Aplicação Interativa
 
-`SEMESTRE`
+Eixo 2 - 2023
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+O projeto consiste em desenvolver um sistema de Quadrinho. Através dessa aplicação, os usuarios poderão ter mais controle das suas coleções.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Jessica Hora dos Santos
+* Marcos Vinicio Araujo Almeida
+* Nico Rocha da Costa
+* Thiago Bastani Pontel Oliveira
+* Thiago Carvalho Sobroza
+* Cristiane Queiroz de Brito
 
 ## Orientador
 
-* Nome completo do professor
+* Joyce Christina de Paiva Carvalho
 
 # Documentação
 
