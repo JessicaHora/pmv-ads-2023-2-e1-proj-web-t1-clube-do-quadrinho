@@ -13,10 +13,10 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe é organizada da seguinte maneira:
 
-- Scrum Master: Cristiane Queiroz de Brito, Thiago Carvalho Sobroza
-- Product Owner: Nico Rocha da costa
+- Scrum Master: Cristiane Queiroz de Brito
+- Product Owner: Nico Rocha da Costa
 - Equipe de Desenvolvimento: Jessica Hora dos Santos, Marcos Vinicio Araujo Almeida, Nico Rocha da Costa, Thiago Bastani Pontel Oliveira, Thiago Carvalho Sobroza, Cristiane Queiroz de Brito
-- Equipe de Design: Nico Rocha da Costa, Cristiane Queiroz de Brito
+- Equipe de Design: Nico Rocha da Costa e Jessica Hora dos Santos
 
 ### Processo
 
@@ -56,8 +56,7 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 - Ferramenta de Comunicacao
 - Ferramenta de Design de interface
 
-O editor de codigos sera usado para escrever o codigo fonte e ter um vercionamento para os arquivos, a ferramenta de cominicacao sera usada para o trabalho em equipe e para realizacao de cerimonias necessarias,
-a ferramenta de design de interface sera utilizada para a criacao de diagramas e para o usuario ter um entendimento melhor da interacao de usuario com a aplicacao.
+O editor de códigos será usado para desenvolver o código fonte e ter um versionamento para os arquivos, a ferramenta de comunicação permitirá o trabalho em equipe adequado e a realização de cerimônias necessárias. A ferramenta de design de interface será utilizada para a criaçao de diagramas e ter um entendimento melhor da interação do usuário com a aplicação.
 
 Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
 
