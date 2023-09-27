@@ -22,9 +22,36 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 [Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
 
-### Hamepage Login do usuário.
+### Homepage de cadastro do usuário.
+
+<img width="1080" alt="Homepage cadastro " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%20-%20Cadastro.png"> 
+
+### Homepage Login do usuário.
 
 <img width="1080" alt="Homepage login " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%20-%20Login.png"> 
+
+### Homepage inicial do site.
+
+<img width="1080" alt="Homepage inicial " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%201.png"> 
+
+### Listas 
+
+<img width="1080" alt="Listas " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Listas.png"> 
+
+
+### Criar Lista
+
+<img width="1080" alt="Criar Lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Criar%20lista.png"> 
+
+### Criar nova Lista
+
+<img width="1080" alt="Criar Nova Lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Criar%20lista%202.png"> 
+
+### Adicionar Lista
+
+<img width="1080" alt="adicionar lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Criar%20lista%202.png"> 
+
+
 
  
 > **Links Úteis**:
