@@ -1,9 +1,11 @@
 
 # Projeto de Interface
 
+Visão Geral de como será a visualização e interação do usuario nas telas do sistema.
+
 ## Fluxo de Usuário- Clube do Quadrinho
 
-Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de navegação do usuário na aplicação. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
+O fluxograma apresenta como o sistema responderá a cada interação do usuário, alem de ajudar a entender a estrutura e o funcionamento de um sistema ou processo de maneira clara e concisa. Abaixo, apresentamos um fluxograma simplificado de uma página web típica:
 
 <img width="892" alt="fluxo de usuario" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/fluxograma%20Clube%20do%20Quadrinho.png"> 
 
