@@ -12,60 +12,51 @@ O fluxograma apresenta como o sistema responderá a cada interação do usuário
 
 ## Protótipo
 
-Desenvolver um protótipo emerge como uma das maneiras mais ágeis e econômicas de validar uma ideia, conceito ou funcionalidade. Isso permite a interação, avaliação, modificação e aprovação das principais características de uma interface antes de entrar na fase de desenvolvimento. Leia o artigo [Protótipos: baixa, média ou alta fidelidade?](https://medium.com/ladies-that-ux-br/prot%C3%B3tipos-baixa-m%C3%A9dia-ou-alta-fidelidade-71d897559135).
-
-### Protótipo de baixa fidelidade
-
-Protótipos de baixa fidelidade apresentam de forma simplificada o design da interface e o relacionamento entre suas páginas, permitindo evolução da proposta da solução. Neste projeto, os utilizaremos para apoiar a validação dos requisitos e efetuar mudanças dos mesmos, caso seja necessário, para menor impacto na codificação da aplicação.
-
-[Elabore as principais interfaces gráficas da aplicação de modo que os requisitos funcionais sejam contemplados nas telas propostas.]
+Abaixo segue as principais interfaces gráficas da aplicação de modo que os requisitos funcionais estão contemplados nas telas propostas.
 
 ### Homepage de cadastro do usuário.
 
+Nesta tela, o usuário poderá criar sua conta pessoal para acessar as funcionalidades do programa.
 <img width="892" alt="Homepage cadastro " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%20-%20Cadastro.png"> 
 
 ### Homepage Login do usuário.
-
+Nesta tela, o usuário que ja tenham cadastro poderão fazer login.
 <img width="892" alt="Homepage login " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%20-%20Login.png"> 
 
 ### Homepage inicial do site.
-
+Nesta será exibido as leituras em andamento, as que ainda estão para serem lidas e as concluidas.
 <img width="892" alt="Homepage inicial " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%201.png"> 
 
-### pagina inicial de lista
-
+### Página inicial de lista.
+Nesta tela,serão visualizado a listagem de titulos selecionados.
 <img width="892" alt="inicial lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/P%C3%A1gina%20de%20lista.png"> 
 
 ### Listas 
-
+Nessas telas será possivel criar listas, edita-las.
 <img width="892" alt="Listas " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Listas.png"> 
-
-### Criar Lista
 
 <img width="892" alt="Criar Lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Criar%20lista.png"> 
 
-### Criar nova Lista
-
 <img width="892" alt="Criar Nova Lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Criar%20lista%202.png"> 
-
-### Adicionar Lista
-
-<img width="892" alt="adicionar lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Adicionar%20lista.png"> 
-
-### Adicionar Dropdown
-
-<img width="892" alt="adicionar Dropdown " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Adicionar%20dropdown.png"> 
-
-### Editar Lista
 
 <img width="892" alt="Editar listas " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Editar%20lista.png"> 
 
-### Pesquisa de Quadrinhos
 
+### Adicionar Lista
+
+Nesta tela o usuário poderá adicionar os titulos escolhidos na lista criada, afim de manter 
+<img width="892" alt="adicionar lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Adicionar%20lista.png"> 
+
+### Adicionar Dropdown
+Essa funcionalidade permite ao usuário classificar o determinado quadrinho.
+<img width="892" alt="adicionar Dropdown " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Adicionar%20dropdown.png"> 
+
+### Pesquisa de Quadrinhos
+Tela com os resultados da pesquisa.
 <img width="892" alt="pesquisar" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Pesquisa%202.png"> 
 
 ### Visualização do quadrinho escolhido
-
+Tela apresentando a sinopse do quadrinho.
 <img width="892" alt="visualização" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/P%C3%A1gina%20quadrinho.png"> 
 
 
