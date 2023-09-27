@@ -34,10 +34,13 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <img width="582" alt="Homepage inicial " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%201.png"> 
 
+### pagina inicial de lista
+
+<img width="582" alt="inicial lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/P%C3%A1gina%20de%20lista.png"> 
+
 ### Listas 
 
 <img width="582" alt="Listas " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Listas.png"> 
-
 
 ### Criar Lista
 
@@ -51,6 +54,19 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <img width="582" alt="adicionar lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Adicionar%20lista.png"> 
 
+### Adicionar Dropdown
+
+<img width="582" alt="adicionar Dropdown " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Adicionar%20dropdown.png"> 
+
+### Editar Lista
+
+<img width="582" alt="Editar listas " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Editar%20lista.png"> 
+
+### Pesquisa de Quadrinhos
+
+<img width="582" alt="pesquisar" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Pesquisa%202.png"> 
+
+### 
 
 
  
