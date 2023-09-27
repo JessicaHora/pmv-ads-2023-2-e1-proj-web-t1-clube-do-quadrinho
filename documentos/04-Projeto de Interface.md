@@ -24,7 +24,7 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 ### Homepage de cadastro do usuário.
 
-<img width="582" alt="Homepage cadastro " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%20-%20Cadastro.png"> 
+<img width="892" alt="Homepage cadastro " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%20-%20Cadastro.png"> 
 
 ### Homepage Login do usuário.
 
