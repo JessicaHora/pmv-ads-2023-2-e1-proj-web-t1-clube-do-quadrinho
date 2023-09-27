@@ -44,7 +44,7 @@ Nessas telas será possivel criar listas, edita-las.
 
 ### Adicionar Lista
 
-Nesta tela o usuário poderá adicionar os titulos escolhidos na lista criada, afim de manter 
+Nesta tela o usuário poderá adicionar os titulos escolhidos na lista criada, afim de manter a organização.
 <img width="892" alt="adicionar lista " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Adicionar%20lista.png"> 
 
 ### Adicionar Dropdown
@@ -61,16 +61,6 @@ Tela apresentando a sinopse do quadrinho.
 
 
 
-
-
-
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
->- Ferramentas:
->> - [Pencil](https://pencil.evolus.vn/)
->> - [MarvelApp](https://marvelapp.com/)
->> - [Figma](https://www.figma.com/)
 
 
 
