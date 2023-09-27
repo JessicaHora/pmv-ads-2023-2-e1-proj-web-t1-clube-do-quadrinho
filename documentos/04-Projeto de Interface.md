@@ -24,7 +24,7 @@ Nesta tela, o usuário que ja tenham cadastro poderão fazer login.
 <img width="892" alt="Homepage login " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%20-%20Login.png"> 
 
 ### Homepage inicial do site.
-Nesta será exibido as leituras em andamento, as que ainda estão para serem lidas e as concluidas.
+Nesta será exibido as leituras em andamento, as que ainda estão para serem lidas e as concluídas.
 <img width="892" alt="Homepage inicial " src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/Homepage%201.png"> 
 
 ### Página inicial de lista.
