@@ -70,7 +70,7 @@ Protótipos de baixa fidelidade apresentam de forma simplificada o design da int
 
 <img width="582" alt="visualização" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/P%C3%A1gina%20quadrinho.png"> 
 
-<img width="582" alt="visualizacao2" src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/blob/main/documentos/img/P%C3%A1gina%20quadrinho%202.png"> 
+
 
 
 
