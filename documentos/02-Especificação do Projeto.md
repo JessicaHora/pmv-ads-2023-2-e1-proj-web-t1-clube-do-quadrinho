@@ -2,20 +2,23 @@
 
 ## Perfis de Usuários
 
-[Enumere e faça o detalhamento dos perfis de usuários. Utilize o modelo de tabela abaixo para sintetizá-los.]
-
 <table>
 <tbody>
 <tr align=center>
-<th colspan="2">Perfil Nome </th>
+<th colspan="2">Perfil: Leitor </th>
 </tr>
 <tr>
 <td width="150px"><b>Descrição</b></td>
-<td width="600px">...</td>
+<td width="600px">Leitor de quadrinhos em sua maioria entre 18-25 anos, com costumes individuais de organização. </td>
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>...</td>
+<td>1.	Organização das leituras de quadrinhos.
+2.	Avaliar e dar notas aos quadrinhos.
+3.	Descoberta de novos quadrinhos.
+4.	Saber o progresso de leitura.
+5.	Ambiente digital simplificado, bem intuitivo, de fácil entendimento para organizar leituras de quadrinhos
+</td>
 </tr>
 </tbody>
 </table>
@@ -23,30 +26,32 @@
 
 ## Histórias de Usuários
 
-[Apresente aqui as histórias de usuários que são relevantes para o projeto da solução.]
-
-> **Link Útil**:
-> - [Como escrever boas histórias de usuário](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-
-[Utilize o modelo de tabela abaixo para apresentar as histórias de usuários.]
-
-|EU COMO... `QUEM`   | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`                 |
-|--------------------|---------------------------|----------------------------------|
-| ...                | ...                       | ...                              |
-| ...                | ...                       | ...                              |
+|EU COMO... `QUEM`               | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`       |
+|--------------------------------|---------------------------|------------------------|
+| Leitor   |Organizar meus quadrinhos por gênero   |Adequar a forma que costumava organizar.    |
+| Leitor   |Avaliar capítulos dos quadrinhos que leio.   |Deixar registrado minha experiência com aquele quadrinho.   |
+| Leitor   |Pesquisar quadrinhos por título, autor ou personagem.   |Descobrir novos quadrinhos para ler ou marcar como lido.   |
+| Leitor   |Verificar o progresso das minhas leituras.    |Saber qual capítulo do quadrinho que parei.   |
+| Leitor   |Organizar meus quadrinhos em uma estrutura simplificada   |Facilitar organização das minhas coleções e leituras.   |
 
 ## Requisitos do Projeto
 
-[Com base nas Histórias de Usuários, enumere os requisitos da solução. Lembre-se que cada requisito deve corresponder a uma, e somente uma, característica alvo da solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.]
 
 ### Requisitos Funcionais
 
-[Utilize o modelo de tabela abaixo para apresentar os requisitos funcionais]
-
 |ID    | Descrição                | Prioridade |
-|-------|---------------------------------|----|
-| RF-01 |  ...                    | ...   | 
-|  ...  |  ...                    | ...   |
+|------|--------------------------|------------|
+|RF-01   |O sistema deve permitir ao usuário registrar avaliação aos quadrinhos.   |Média   |
+|RF-02   |O sistema deve oferecer uma funcionalidade de pesquisa para permitir ao usuário encontrar e descobrir quadrinhos.   |Alta   |
+| RF-03  |O sistema deve permitir ao usuário verificar o progresso de leitura de um quadrinho.   |Baixa   |
+|RF-04   |O sistema deve permitir ao usuário cadastrar uma conta.   |Alta   |
+|RF-05   |O sistema deve oferecer ao usuário uma página geral com todos os quadrinhos registrados e separados nas categorias de lidos, lendo e a ler.   |Alta   |
+|RF-06   |O sistema deve permitir ao usuário registrar quadrinhos como lidos, lendo e a ler.   |Alta   |
+|RF-07   |O sistema deve oferecer uma funcionalidade de filtro/pesquisa na página de quadrinhos registrados.   |Média   |
+|RF-08   |O sistema deve permitir ao usuário visualizar as informações dos quadrinhos.   |Média   |
+|RF-09   |O sistema deve permitir ao usuário fazer o login da sua conta.   |Alta   |
+|RF-10   |O sistema deve permitir ao usuário criar listas individuais para registro de quadrinhos, para organização da forma que o usuário desejar (por gênero, personagem, etc.). A estrutura dos quadrinhos das listas deve seguir as categorias de lidos, lendo e a ler.   |Alta   |
+
 
 **Prioridade: Alta / Média / Baixa. 
 
@@ -55,9 +60,10 @@
 [Utilize o modelo de tabela abaixo para apresentar os requisitos não-funcionais]
 
 |ID      | Descrição               |Prioridade |
-|--------|-------------------------|----|
-| RNF-01 |  ...                    | ...   | 
-| ...    |  ...                    | ...   | 
+|--------|-------------------------|-----------|
+| RNF-01 |O sistema deve ser responsivo para se adaptar a diferentes tamanhos de telas (dispositivos móveis, desktop).|Média| 
+|RNF-02  |O sistema deve ser compatível com os principais navegadores do mercado: Google Chrome, Firefox, Microsoft Edge, Opera.| Alta| 
+|RNF-03  |O sistema deve ser publicado em um ambiente acessível e público na internet. |Alta|
 
 **Prioridade: Alta / Média / Baixa. 
 
