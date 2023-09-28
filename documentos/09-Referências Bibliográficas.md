@@ -1,7 +1,3 @@
 # Referências Bibliográficas
 
-[Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.]
-
-> **Links Úteis**:
-> - [Formato ABNT](https://www.normastecnicas.com/abnt/)
-> - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
+ROMANCES e quadrinhos estão entre os livros mais lidos durante a pandemia. [Rio de Janeiro]: Globo Comunicação e Participações, 2020. 1 vídeo (3 min). Publicado por Bom Dia Brasil. Disponível em: https://globoplay.globo.com/v/8693665/. Acesso em: 21 ago. 2023. 

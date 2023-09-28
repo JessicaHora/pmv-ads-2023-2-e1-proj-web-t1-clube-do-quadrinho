@@ -13,11 +13,12 @@
 </tr>
 <tr>
 <td><b>Necessidades</b></td>
-<td>1.	Organização das leituras de quadrinhos.
-2.	Avaliar e dar notas aos quadrinhos.
-3.	Descoberta de novos quadrinhos.
-4.	Saber o progresso de leitura.
-5.	Ambiente digital simplificado, bem intuitivo, de fácil entendimento para organizar leituras de quadrinhos
+<td>
+1. Organização das leituras de quadrinhos.
+2. Avaliar e dar notas aos quadrinhos.
+3. Descoberta de novos quadrinhos.
+4. Saber o progresso de leitura.
+5. Ambiente digital simplificado, bem intuitivo, de fácil entendimento para organizar leituras de quadrinhos.
 </td>
 </tr>
 </tbody>
