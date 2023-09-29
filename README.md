@@ -1,21 +1,21 @@
-# Clube do Quadrinho 📖
+Clube do Quadrinho
 
-`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - PUC Minas`
+ANÁLISE E DESENVOLVIMENTO DE SISTEMAS
 
-`Desenvolvimento de Aplicação Web Front-End`
+Projeto: Desenvolvimento de uma Aplicação Interativa
 
-`Eixo 1 - 2023`
+Eixo 2 - 2023
 
-O projeto consiste em desenvolver um sistema de organização de leitura de quadrinhos. Através dessa aplicação, os usuários poderão ter mais controle das suas coleções.
+O projeto consiste em desenvolver um sistema de Quadrinho. Através dessa aplicação, os usuarios poderão ter mais controle das suas coleções.
 
 ## Integrantes
 
-* Cristiane Queiroz de Brito
 * Jessica Hora dos Santos
 * Marcos Vinicio Araujo Almeida
 * Nico Rocha da Costa
 * Thiago Bastani Pontel Oliveira
 * Thiago Carvalho Sobroza
+* Cristiane Queiroz de Brito
 
 ## Orientador
 

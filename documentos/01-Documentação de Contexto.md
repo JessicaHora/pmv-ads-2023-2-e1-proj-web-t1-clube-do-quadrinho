@@ -53,10 +53,10 @@ Foram encontradas características e necessidades em comum entre esses leitores:
 1. Mostram ser adeptos a utilização de redes sociais.
 2. Sua escolha de idioma de leitura é predominantemente em português.
 3. Metade já fez utilização de aplicativos de organização de suas mídias favoritas (séries, filmes, animes, etc.), e outra metade nunca utilizou.
-4. Entre os motivos de utilização de aplicações deste domínio:
-	1. Organizar leituras;
-	2. Descobrir novos filmes, mangás, séries;
-	3. Avaliar as obras que consomem.
+4. Entre os motivos de utilização de aplicações deste domínio: 
+	4. Organizar leituras;
+	4. Descobrir novos filmes, mangás, séries;
+	4. Avaliar as obras que consomem.
 5. Formas distintas e individuais de organização de leituras e coleções.
 6. Maioria afirma que uma aplicação para auxiliar e facilitar a organização de suas leituras de quadrinho seria útil, e confirmam que utilizariam essa aplicação.
 7. Como serviço específico que gostariam de ver, foi identificado diversos, porém a possibilidade de avaliar quadrinhos lidos se destaca.
