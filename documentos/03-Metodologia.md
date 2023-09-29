@@ -20,16 +20,16 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 
 ### Processo
 
- Para organizar e distribuir as tarefas do projeto, a equipe está utilizando o GitHub,  e isso está sendo feito por meio da estruturação das seguintes listas:
+ A equipe está utilizando o GitHub para organizar e distribuir as tarefas do projeto, e isso está sendo feito através das listas a seguir:
  
 - Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
 - To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
 - Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
 - Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
 
- O quadro Kanban gerenciado pelo grupo no GitHub pode ser acessado através do link fornecido abaixo e é apresentado no seu estado atual, conforme demonstrado na figura a seguir:
+O quadro kanban do grupo no GitHub pode ser acessado através do seguinte link, e é apresentado na figura abaixo em seu estado atual:
  
- Link para visualização do quadro Kanban: https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/635/views/1
+Link para visualização do quadro Kanban: https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/635/views/1
  ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/116609828/38d95a6b-4cdd-42b0-9e8d-10fd4f89671c)
 
 
