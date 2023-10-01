@@ -2,7 +2,7 @@
 
 O cenário das histórias em quadrinhos (HQs) no Brasil é algo que evoluiu muito desde a década de 50. É possível observar mudanças que o avanço da tecnologia trouxe ao mercado e hábitos dos leitores. Para leitores de quadrinhos ávidos e dedicados em ler e ter toda coleção de seus títulos favoritos, independentemente de seu formato de leitura, a organização e gerenciamento de todos esses quadrinhos e suas edições pode ser um desafio.
 
-Atualmente projetos de software que trazem, para além de uma solução para um problema, um novo produto digital feito para conquistar um público específico, ganham destaque. Quando se trata de produtos digitais, fala-se de itens que agregam valor aos usuários. No contexto literário, a plataforma e rede social Skoob é mencionada como um produto de valor, atualmente pertencendo à empresa Americanas S.A., com 8 milhões de usuários ativos. Além disso, outras plataformas que oferecem serviços semelhantes de organização de conteúdo são relevantes entre seu público-alvo, como o Letterboxd, que atende aos consumidores de filmes, entre outras.
+Atualmente projetos de software que trazem, para além de uma solução para um problema, um novo produto digital feito para conquistar um público específico, ganham destaque. Quando se trata de produtos digitais, fala-se de itens que agregam valor aos usuários. No contexto literário, a plataforma e rede social Skoob pode ser vista como um produto de valor, atualmente pertencendo à empresa Americanas S.A. Além disso, existem outras plataformas que oferecem serviços semelhantes de organização de conteúdo e são relevantes entre seu público-alvo, como o TV Time, que atende aos consumidores séries e filmes, entre outras.
 
 Vista a popularidade de aplicações deste domínio, e percebendo as necessidades de leitores de quadrinhos em ter um espaço para organizar e monitorar facilmente suas leituras, a criação de um produto digital para suprir essa carência se mostra relevante, trazendo uma nova experiência de organização, apreciação e descoberta para este público.
 
@@ -25,22 +25,11 @@ Como objetivos específicos, é possível destacar:
 
 ## Justificativa
 
-Segundo uma pesquisa realizada pela Growth from Knolewdge (GfK) (2020), é encontrado uma mudança no comportamento de consumo de leitura dos brasileiros. Antes da pandemia de COVID-19 o gênero de HQs/Comics/Mangás estava na quinta posição de mais vendidos, e após a pandemia os quadrinhos subiram para segunda, com romance em primeiro.
+Segundo uma pesquisa realizada pela Growth from Knolewdge (GfK) (2020), foi encontrado mudanças no comportamento de consumo de leitura dos brasileiros. Antes da pandemia da COVID-19, HQs/Quadrinhos/Mangás eram o quinto gênero mais vendido, mas após a pandemia, subiram para o segundo lugar, com romance em primeiro. Outra mudança de mercado observada são empresas que estão investindo em produtos digitais para melhorar e acelerar serviços anteriormente feitos manualmente, impulsionando a demanda por serviços digitais, especialmente após o isolamento social, em meio a avanços tecnológicos.
 
-Uma outra mudança de mercado é o de empresas e serviços investindo no espaço digital. Um dos tipos de produtos digitais que se destaca no mercado atualmente é o SaaS, Software as a Service, que surge em diferentes formatos. Esses produtos acabam substituindo ou acelerando serviços, que antes, eram feitos manualmente. Com a transformação digital pode-se notar o aumento da procura por serviços disponibilizados digitalmente, principalmente após o isolamento social. 
+É possível identificar, formalmente ou não, um mercado de aplicações específicas para o público que deseja organizar, conectar-se e encontrar informações sobre suas mídias de entretenimento favoritas. Exemplos incluem o Skoob, uma rede social para leitores brasileiros, com oito milhões de usuários ativos e que pertence à empresa Americanas S.A, o TV Time, inicialmente centrado em séries e atualmente foi ampliado, permitindo que seus usuários acompanhem séries e filmes que já finalizaram, estão assistindo ou que desejam assistir futuramente, e o MyAnimeList, uma plataforma japonesa para leitores de mangás e animes, que permite o usuário organizar, acompanhar o progresso de suas leituras e avaliar os conteúdos. Essas plataformas oferecem recursos em comum, como organização, monitoramento e avaliação de conteúdo, mas apenas o Skoob e o TV Time estão disponíveis em português.
 
-Formalmente ou não, é possível identificar um mercado de aplicações digitais voltado para públicos que desejam organizar, se conectar, e encontrar informações de suas mídias de entretenimento favoritas. Existe plataformas voltadas para o público de livros, como o Skoob, sendo definida como uma rede social para leitores brasileiros. Em 2021 foi adquirida pela Americanas S.A., com o objetivo de somar conteúdo do universo literário da marca e alcançar novos clientes.
-
-O Letterboxd é voltado para o público cinéfilo, onde seus usuários utilizam para cadastrar seus filmes assistidos e criar listas diversas de seus filmes favoritos, além de também encontrar avaliações e reviews.
-
-TV Time é uma plataforma que incialmente focava no público e conteúdo de séries, hoje expande para que seus usuários possam acompanhar o progresso de suas séries e filmes que estão assistindo, já finalizaram e desejam assistir futuramente, além de trazer notificações de lançamentos novos.
- 
-MyAnimeList está disponível e focado no público de mangás e animes, é uma plataforma de origem japonesa, onde os usuários podem organizar e monitorar progresso e publicações novas de suas leituras de mangás e animes, além de prover com avaliação dos conteúdos feita pelos próprios usuários.
-
-Todas as plataformas analisadas apresentam serviços em comum, como organização, monitoramento e acompanhamento de progresso de suas mídias favoritas, e também possibilidade de avaliação de conteúdo. Apenas o Skoob e TV Time estão disponíveis em português.
-
-Portanto, tendo conhecimento do aumento de interesse de quadrinhos, e da procura de produtos digitais que ofertem serviços voltados aos interesses de públicos específicos, se mostra oportuno investir em um produto para leitores de quadrinhos brasileiros, em que possam organizar suas coleções.
-
+Portanto, diante do aumento do interesse por quadrinhos e da busca por produtos digitais que atendem às necessidades de públicos específicos, torna-se oportuno investir em um produto destinado aos leitores de quadrinhos brasileiros, permitindo que eles organizem suas coleções.
 
 ## Público-Alvo
 
