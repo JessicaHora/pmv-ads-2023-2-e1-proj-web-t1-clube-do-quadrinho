@@ -1,6 +1,6 @@
 # Introdução
 
-O cenário das histórias em quadrinhos (HQs) no Brasil é algo que evoluiu muito desde a década de 50. É possível observar mudanças que o avanço da tecnologia trouxe ao mercado e hábitos dos leitores. Para leitores de quadrinhos ávidos e dedicados em ler e ter toda coleção de seus títulos favoritos, independentemente de seu formato de leitura, a organização e gerenciamento de todos esses quadrinhos e suas edições pode ser um desafio.
+O cenário das histórias em quadrinhos (HQs) no Brasil é algo que evoluiu muito desde a década de cinquenta. É possível observar mudanças que o avanço da tecnologia trouxe ao mercado e hábitos dos leitores. Para leitores de quadrinhos ávidos e dedicados em ler e ter toda coleção de seus títulos favoritos, independentemente de seu formato de leitura, a organização e gerenciamento de todos esses quadrinhos e suas edições pode ser um desafio.
 
 Atualmente projetos de software que trazem, para além de uma solução para um problema, um novo produto digital feito para conquistar um público específico, ganham destaque. Quando se trata de produtos digitais, fala-se de itens que agregam valor aos usuários. No contexto literário, a plataforma e rede social Skoob pode ser vista como um produto de valor, atualmente pertencendo à empresa Americanas S.A. Além disso, existem outras plataformas que oferecem serviços semelhantes de organização de conteúdo e são relevantes entre seu público-alvo, como o TV Time, que atende aos consumidores séries e filmes, entre outras.
 
