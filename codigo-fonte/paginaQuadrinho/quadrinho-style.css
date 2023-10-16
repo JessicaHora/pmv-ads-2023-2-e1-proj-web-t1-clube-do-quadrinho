@@ -1,0 +1,78 @@
+/* NAVBAR CSS */
+.logo {
+    width: 2.3rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #2B3BA0;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #2B3BA0;
+}
+
+/*  */
+
+/* BODY CSS */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* CONTENT CSS */
+section {
+    flex: 1 1 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+}
+
+#capa-quadrinho {
+    width: 100%;
+}
+
+.quadrinho-avaliar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.quadrinho-avaliar input {
+    display: none;
+}
+
+.quadrinho-avaliar label {
+    cursor: pointer;
+}
+
+.quadrinho-avaliar i {
+    font-size: 1.5em;
+    color: #adb5bd;
+}
+
+/* FOOTER CSS */
+footer {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+    position: relative;
+    color: #343a40;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 463px){
+    .content {
+        padding: 0;
+        margin: 0;
+    }
+}
