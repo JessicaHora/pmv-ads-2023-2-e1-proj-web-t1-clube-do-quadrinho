@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
 
 :root,
 [data-bs-theme=light] {
@@ -53,14 +54,14 @@
     --danger-dark: #410002;
     --bs-light: #FBF8FD;
     --bs-dark: #1B1B1F;
-    --bs-primary-rgb: rgb(69, 85, 185);
-    --bs-secondary-rgb: rgb(164, 32, 155);
-    --bs-tertiary-rgb: rgb(132, 84, 0);
+    --bs-primary-rgb: 69, 85, 185;
+    --bs-secondary-rgb: 164, 32, 155;
+    --bs-tertiary-rgb: 132, 84, 0;
     --bs-info-rgb: 13, 202, 240;
     --bs-warning-rgb: 255, 193, 7;
-    --bs-danger-rgb: rgb(186, 26, 26);
-    --bs-light-rgb: rgb(251, 248, 253);
-    --bs-dark-rgb: rgb(27, 27, 31);
+    --bs-danger-rgb: 186, 26, 26;
+    --bs-light-rgb: 251, 248, 253;
+    --bs-dark-rgb: 27, 27, 31;
     --bs-primary-text-emphasis: #000E5F;
     --bs-secondary-text-emphasis: #390036;
     --bs-tertiary-text-emphasis: #2A1800;
@@ -269,6 +270,24 @@ body {
     background-color: var(--bs-body-bg);
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+    background-color: var(--primary-light);
+    color: var(--bs-white);
+}
+
+::-webkit-scrollbar {
+    width: 0.59rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-lightest);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bs-gray-400);
 }
 
 .display-large {
@@ -9935,47 +9954,6 @@ a.text-dark:hover {
 .text-break {
     word-wrap: break-word !important;
     word-break: break-word !important;
-}
-
-/* rtl:end:remove */
-.text-primary {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-secondary {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-secondary-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-tertiary {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-tertiary-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-info {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-warning {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-danger {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-light {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
-}
-
-.text-dark {
-    --bs-text-opacity: 1;
-    color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
 }
 
 .text-black {
