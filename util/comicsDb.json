@@ -1,0 +1,232 @@
+{
+    "comics": [
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "APRESENTANDO O PUNHO DE FERRO DE 1.000.000 A.C.! ANDREA SORRENTINO SE JUNTA AO ESCRITOR DA SÉRIE, JASON AARON, em mais uma história de flashback dos Heróis Mais Poderosos da Terra na Era Pré-Histórica. Conheça a mulher primordial que foi a primeira a domar o poder do coração do dragão Shou-Lao, tornando-se a allprimeira Punho de Ferro.",
+            "title": "VINGADORES #13",
+            "creators": "AUTOR:  Jason Aaron | ARTISTA:  Andrea Sorrentino | ARTISTA DE CAPA:  Steve Epting",
+            "release_date": "23/01/2019",
+            "id": 1,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/30/5c3f94de0b801/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "DC COMICS",
+            "description": "A 'Morte da Família' continua aqui! Os ataques do Coringa causaram estragos em Batman e seus aliados, e agora eles têm que enfrentar o impossível.A loucura final do plano do Coringa é revelada aqui! Por que ele está mais perigoso agora do que nunca? Além disso: na história complementar, testemunhe o confronto do Coringa com o Charada à medida que o horror do plano do Coringa é revelado.",
+            "title": "BATMAN #15",
+            "creators": "AUTOR:  Scott Snyder | ARTISTA:  Jonathan Glapion, Greg Capullo | ARTISTA DE CAPA:  Greg Capullo",
+            "release_date": "12/12/2012",
+            "id": 2,
+            "image": "https://static.dc.com/dc/files/default_images/batman_v2_15_5b2ad5fb4015a3.94422509.jpg?w=640",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "IMAGE COMICS",
+            "description": "A estadia de nossos heróis em Quietus chega à sua conclusão inevitável.",
+            "title": "SAGA #18",
+            "creators": "AUTOR:   Brian K. Vaughan | ARTISTA:  Fiona Staples | ARTISTA DE CAPA:  Fiona Staples",
+            "release_date": "29/01/2014",
+            "id": 2,
+            "image": "https://cdn.imagecomics.com/assets/i/releases/2438/saga-18_8ebb995f3e.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "DARK HORSE COMICS",
+            "description": "Uma jornada épica em um mundo de fantasia, com magia e monstros.",
+            "title": "MAGE #8",
+            "creators": "AUTOR:  Matt Wagner | ARTISTA:  Matt Wagner | ARTISTA DE CAPA:  Matt Wagner",
+            "release_date": "25/10/2021",
+            "id": 4,
+            "image": "https://m.media-amazon.com/images/I/A1SRkbFCeQL._SL1500_.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "DARK HORSE COMICSS",
+            "description": "Anotsu consegue sair de Edo sem ser encontrado pelos membros da Mugai-Ryu. Depois do conflito com Shira, Manji e Rin decidem seguir sem o grupo, mas a separação não será tão simples.",
+            "title": "Blade - A Lâmina do Imortal - Volume 4",
+            "creators": "AUTOR:  Samura | ARTISTA:  Hiroaki Samura | ARTISTA DE CAPA:  Hiroaki Samura",
+            "release_date": "16/11/2021",
+            "id": 5,
+            "image": "https://m.media-amazon.com/images/I/71t5ny8agkL._SL1000_.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "A GUERRA DOS VAMPIROS COMEÇA! A TRANSILVÂNIA ESTÁ EM CHAMAS! Enquanto a guerra civil dos vampiros lança o mundo no caos, o misterioso Coronel Sombra e seu esquadrão de revolucionários mortos-vivos têm uma pergunta que queima em suas mentes assassinas: Onde está Drácula? E se os Vingadores o encontrarem primeiro, será o senhor dos amaldiçoados amigo ou inimigo?",
+            "title": "VINGADORES #14 ",
+            "creators": "AUTOR:  Jason Aaron | ARTISTA:  David Marquez | ARTISTA DE CAPA:  David Marquez",
+            "release_date": "27/10/2021",
+            "id": 6,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/c/20/5c523c34cebc8/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "O FINAL DE PRESA - E A LUTA DA VIDA DE THOR! O Pai de Todos Thor escapa de sua prisão! Mas Donald Blake acumulou mais poder do que o Rei de Asgard pode saber. Uma coisa é certa: quando o martelo descer, apenas um homem ficará de pé. Grande ação e grandes apostas são o especial de Donny Cates e Nic Klein - mas você nunca os viu assim antes. Este é o número que você não pode perder!",
+            "title": "THOR #14 ",
+            "creators": "AUTOR:  Donny Cates | ARTISTA:  Nic Klein | ARTISTA DE CAPA:  Olivier Coipel",
+            "release_date": "14/04/2021",
+            "id": 7,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/5/90/606f6203ac20e/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "UMA GALÁXIA INTEIRA DE PROBLEMAS! Enquanto metade da equipe defende o Mundo do Trono Kree/Skrull contra uma ameaça mais mortal do que jamais enfrentaram antes... a outra metade investiga um culto de sacrifício aterrorizante em um planeta misterioso... com o poder de mergulhar o universo na guerra. Além disso: Um novo herói espacial... se junta... à equipe...",
+            "title": "GUARDIÕES DA GALÁXIA #14",
+            "creators": "AUTOR:  Al Ewing | ARTISTA:  Juan Frigeri | ARTISTA DE CAPA:  Brett Booth",
+            "release_date": "27/10/2021",
+            "id": 8,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/b0/6087319c790bc/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "JANE FOSTER OCUPA O CENTRO DAS ATENÇÕES! Ela já empunhou famosamente o Mjolnir como Thor, Deusa do Trovão. Hoje, ela protege os mundos dos vivos e dos mortos como a Valquíria alada. Agora, essas duas versões do mesmo poderoso herói de alguma forma se encontram cara a cara, em uma tentativa desesperada de salvar a alma de Jane Foster.",
+            "title": "VINGADORES #56",
+            "creators": "AUTOR:  Jason Aaron | ARTISTA:  Javier Garrón | ARTISTA DE CAPA:  Javier Garrón",
+            "release_date": "25/05/2022",
+            "id": 9,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/2/e0/62b9e2090a324/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "A CHEGADA DO NIGHTHAWK! Visto pela última vez durante os eventos de HEROES REBORN, o Nighthawk do Esquadrão Supremo da América retorna à cena com um propósito sombrio e misterioso.Ele é amigo ou inimigo dos Vingadores? Ninguém tem certeza.Mas não há dúvidas sobre a perigosa nova encarnação da Sociedade da Serpente!",
+            "title": "VINGADORES #55",
+            "creators": "AUTOR:  Jason Aaron | ARTISTA:  Javier Garron | ARTISTA DE CAPA:  Javier Garron",
+            "release_date": "20/04/2022",
+            "id": 10,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/f0/6259cb69b2ec8/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "ACONTEMPLEM O NASCIMENTO DO HOMEM DE FERRO CÓSMICO! Homem de Ferro provou um poder superior e está para sempre transformado. Momentos antes, ele estava travando uma batalha mortal com seu pior adversário em anos - KORVAC - mas agora ele encontra sua própria existência alterada além de qualquer reconhecimento. De fato, conceitos fundamentais como espaço e tempo adquiriram um novo significado. Mas o que isso pressagia para Tony Stark, um homem que mesmo quando está completamente despojado acredita que sabe o que é melhor? O que acontece quando seu ego - frequentemente desafiado, condenado e até ridicularizado por inimigos e amigos - de repente se vê com uma avenida ilimitada? Isso certamente poderia significar uma mudança radical e drástica para o universo inteiro... e a própria realidade.",
+            "title": "FERRO E MÁQUINA DE COMBATE #14 ",
+            "creators": "AUTOR:  Cantwell, More | ARTISTA:  Juan Ferreyra, More | ARTISTA DE CAPA:  Lee Garbett",
+            "release_date": "24/11/2021",
+            "id": 11,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/a/10/619e637b7fe1f/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "Clea está de volta! A ex-mulher do Doutor Estranho o encontra em um dos momentos mais aterrorizantes de sua vida, com GALACTUS ÀS SUAS COSTAS! Será que os dois podem encontrar uma maneira de salvar inúmeras vidas?",
+            "title": "DOUTOR ESTRANHO #14 ",
+            "creators": "AUTOR:  Barry Kitson, Mark Waid | ARTISTA:  Barry Kitson | ARTISTA DE CAPA:  Jesus Saiz",
+            "release_date": "22/05/2019",
+            "id": 12,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/f/40/5cd9cb1e6da62/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "A LENDA DE STEVE CONTINUA! Enquanto Steve Rogers continua tentando provar sua inocência e permanecer um passo à frente de Nick Fury, ele e Mockingbird viajam para Iowa, onde uma cidade está sob o domínio do misterioso grupo conhecido apenas como - ELES!",
+            "title": "CAPITÃO AMÉRICA #14",
+            "creators": "AUTOR:  Ta-Nehisi Coates | ARTISTA:  Leonard Kirk | ARTISTA DE CAPA:  Alex Ross",
+            "release_date": "25/09/2019",
+            "id": 13,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/7/20/5d7f93571b9a6/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "UMA HISTÓRIA EXTREMAMENTE RELEVANTE ABALA O UNIVERSO MARVEL! Quando um homem negro é assassinado por um policial em Nova York, Luke Cage é chamado para agir. Mas o que um homem de bem faz quando proteger as ruas o coloca em conflito com seu próprio povo? Um grupo de policiais corruptos chamados de Reguladores está aterrorizando os cidadãos comuns, e com o Demolidor determinado a derrubá-los a qualquer custo e o prefeito Fisk igualmente decidido a usá-los para apertar seu controle sobre a cidade, cabe a Cage evitar que a cidade inteira vá literalmente pelos ares. Acompanhado por uma emocionante equipe de artistas (Farid Karami na #1, Ray-Anthony Height na #2 e Sean Damien Hill na #3), o celebrado criador Ho Che Anderson (King: A Comics Biography of Martin Luther King, Jr.; Scream Queen) faz sua estreia na Marvel com uma história ambiciosa e impactante, diferente de tudo que você já viu na Terra-616. A mudança está chegando - e começa aqui.",
+            "title": "LUKE CAGE #14 ",
+            "creators": "AUTOR:  Ho Che Anderson | ARTISTA:  Farid Karami | ARTISTA DE CAPA:  Taurin Clarke",
+            "release_date": "05/01/2022",
+            "id": 14,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/e/50/61ae2bc0a4c3e/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "O icônico 42º número de Miles Morales! Assim como o número da aranha que o mordeu e o número vencedor da loteria para a Academia Brooklyn Visions, o número 42 tem um significado especial no mundo de Miles Morales, e Saladin Ahmed celebra este marco com um espetáculo de tamanho especial ao lado dos incríveis artistas de Miles Morales: Spider-Man! Miles Morales passou por muita coisa ultimamente — é hora de um pouco de descanso e relaxamento, certo? Não quando há coisas boas para serem feitas, e quando algo sombrio e insidioso surge nas ruas de Nova York, o Homem-Aranha é a única esperança para detê-lo. Mas Miles precisará de ajuda, de seus amigos, de sua família e dos aliados mais inesperados, se ousar ter uma chance desta vez!",
+            "title": "MILES MORALES: SPIDER-MAN #42",
+            "creators": "AUTOR:  Saladin Ahmed | ARTISTA:  Carmen Carnero, Alitha E. Martinez, Paris Alleyne, Ig Guara | ARTISTA DE CAPA:  Taurin Clarke",
+            "release_date": "28/09/2022",
+            "id": 15,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/d/00/631b352700279/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        },
+        {
+            "publisher": "MARVEL COMICS",
+            "description": "OS SUSPEITOS INCOMUNS! Mercadorias roubadas. Um navio incendiado. Uma espada desaparecida. Wolverine está no caso, mas que jogos mentais Solem está jogando? O novo vilão dos X-Men ganha destaque neste arco!",
+            "title": "WOLVERINE #14 ",
+            "creators": "AUTOR:  Benjamin Percy | ARTISTA:  Adam Kubert | ARTISTA DE CAPA:  Adam Kubert",
+            "release_date": "28/07/2021",
+            "id": 16,
+            "image": "https://cdn.marvel.com/u/prod/marvel/i/mg/9/00/60fad30f41a96/clean.jpg",
+            "status": {
+                "lido": false,
+                "lendo": false,
+                "queroLer": false
+            }
+        }
+    ]
+}
+
+
+
+
