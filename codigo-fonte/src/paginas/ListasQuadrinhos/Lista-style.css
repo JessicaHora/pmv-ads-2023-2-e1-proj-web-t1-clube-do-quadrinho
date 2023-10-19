@@ -20,6 +20,11 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+
+}
+
+h1 {
+    margin-left: 4.6em;
 }
 
 /* CONTENT CSS */
@@ -34,14 +39,17 @@ section {
     padding: 0 3rem 0 3rem;
 }
 
+
 /* FOOTER CSS */
 footer {
     display: flex;
     flex: 0 1 auto;
-    align-items: center;
+    text-align: center;
     justify-content: center;
-    padding: 3rem 0;
-    position: relative;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     color: #343a40;
     margin-top: 2rem;
 }

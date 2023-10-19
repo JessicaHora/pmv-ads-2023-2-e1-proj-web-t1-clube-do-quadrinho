@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Listas dos quadrinhos.</title>
-    <link rel="stylesheet" href="Lista-style.css" />"
+    <title>Listas de quadrinhos</title>
+    <link rel="stylesheet" href="Lista-style.css" />
     <link rel="stylesheet" href="../../assets/bootstrap/custom-theme.css"/>
     <script defer type="module" src="../../main.js"></script>
     <script defer src="../../assets/util/search.js"></script>
@@ -62,16 +62,29 @@
     </header>
      
     <!---Listas---> 
-    <h1>Criar nova lista</h1>
-    <form>
-        <label for="titulo">Título:</label><br>
-        <input type="text" id="titulo" name="titulo"><br>
-        <label for="descricao">Descrição:</label><br>
-        <input type="text" id="descricao" name="descricao"><br>
-        <p>Sua lista está vazia</p>
-        <input type="submit" value="Salvar">
-        <input type="reset" value="Cancelar">
-    </form>  
+        <main class="container-sm mt-sm-5 pt-4">
+        <div class="row content">
+            <form class="row g-3 flex-column align-items-center">
+                <h1> Criar nova Lista</h1>  
+                <div class="col-md-10">
+                    <label for="titulo" class="form-label">Título</label>
+                    <input type="text" class="form-control" id="titulo">
+                </div>
+                <div class="col-md-10">
+                    <label for="descricao" class="form-label">Descrição</label>
+                    <input type="password" class="form-control" id="descricao">
+                </div>
+                <div class="col-12 text-center">
+                    <p>Sua lista está vazia</p>
+                </div>
+                <div class="col-12 d-flex justify-content-end">
+                    <button type="button" class="btn btn-secondary me-2">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
     <footer class="container-fluid bg-primary-lightest">
         <small>Clube do Quadrinho - 2023</small>
       </footer>

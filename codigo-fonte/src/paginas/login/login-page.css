@@ -5,11 +5,11 @@
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-  color: #2b3ba0;
+   color: #2b3ba0;
 }
 
 .navbar-nav {
-  --bs-nav-link-hover-color: #2b3ba0;
+   --bs-nav-link-hover-color: #2b3ba0;
 }
 
 /*  */
