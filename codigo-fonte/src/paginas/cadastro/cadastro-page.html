@@ -3,11 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Entre no clube do quadrinho</title>
+    <title>Crie sua conta</title>
     <link rel="stylesheet" href="../../assets/bootstrap/custom-theme.css" />
-    <link rel="stylesheet" href="login-page.css" />
+    <link rel="stylesheet" href="cadastro-page.css" />
+    <script src="cadastro-page.js"></script>
     <script defer type="module" src="../../main.js"></script>
     <script defer src="../../assets/util/search.js"></script>
+    <!-- Variáveis de âmbiente  -->
+    <script src="../../env.js"></script>
+    <!-- Serviços  -->
+    <script src="../../services/criptografy-service/criptografy-service.js"></script>
+    <script src="../../services/account-service/account-service.js"></script>
   </head>
 
   <body class="bg-light">
@@ -43,12 +49,16 @@
             </form>
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item mx-md-4">
-                <a id="home" class="nav-link active" aria-current="page" href=""
+                <a
+                  id="home"
+                  class="nav-link"
+                  aria-current="page"
+                  href="../login/login-page.html"
                   >Entrar</a
                 >
               </li>
               <li class="nav-item mx-md-4">
-                <a id="listas" class="nav-link" href="../cadastro/cadastro-page.html">Criar conta</a>
+                <a id="listas" class="nav-link active" href="">Criar conta</a>
               </li>
             </ul>
           </div>
@@ -68,31 +78,49 @@
         </div>
         <div class="col-sm-10 col-md-6 ps-5">
           <h1 id="titulo-quadrinho" class="display-medium mb-5">
-            Entre no clube do quadrinho
+            Crie sua conta
           </h1>
           <form>
             <div class="form-group">
-              <label for="exampleInputEmail1" class="mb-1"
-                >Endereço de email</label
-              >
+              <label for="username" class="mb-1">Username</label>
               <input
-                type="email"
+                name="username"
+                type="text"
                 class="form-control mb-3"
-                id="exampleInputEmail1"
+                id="username"
                 aria-describedby="emailHelp"
                 placeholder="Seu email"
               />
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1" class="mb-1">Senha</label>
+              <label for="exampleInputEmail1" class="mb-1"
+                >Endereço de email</label
+              >
               <input
+                name="email"
+                type="email"
+                class="form-control mb-3"
+                id="email"
+                placeholder="Seu email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="senha" class="mb-1">Senha</label>
+              <input
+                name="senha"
                 type="password"
                 class="form-control mb-3"
-                id="exampleInputPassword1"
+                id="senha"
                 placeholder="Senha"
               />
             </div>
-            <button type="submit" class="btn btn-primary mb-5">Enviar</button>
+            <button
+              type="submit"
+              class="btn btn-primary mb-5"
+              id="btn-cadastrar"
+            >
+              Cadastrar
+            </button>
           </form>
         </div>
       </div>
