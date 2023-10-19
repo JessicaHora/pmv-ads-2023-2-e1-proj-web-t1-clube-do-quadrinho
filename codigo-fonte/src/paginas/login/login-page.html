@@ -29,6 +29,18 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <form class="d-flex me-lg-auto col-lg-5 pt-2" role="search">
+              <input
+                id="queryName"
+                class="form-control me-2"
+                type="search"
+                placeholder="Pesquise por título, autor, editora.."
+                aria-label="Search"
+              />
+              <button id="search" class="btn btn-secondary" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
             <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
               <li class="nav-item mx-md-4">
                 <a id="home" class="nav-link active" aria-current="page" href=""
@@ -36,7 +48,7 @@
                 >
               </li>
               <li class="nav-item mx-md-4">
-                <a id="listas" class="nav-link" href="">Criar conta</a>
+                <a id="listas" class="nav-link" href="../cadastro/cadastro-page.html">Criar conta</a>
               </li>
             </ul>
           </div>
