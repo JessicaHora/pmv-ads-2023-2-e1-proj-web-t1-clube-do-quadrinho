@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+    <!-- Tags para SEO -->
+    <meta charset="UTF-8" />
+    <meta name="description" content="Projeto Quadrinhos" />
+    <meta name="keywords" content="HTML, CSS, JS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+   <!-- link lista.css -->
+    <link rel="stylesheet" href="Lista-style.css" />
+
+    <!-- link style.css -->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!-- link bootstrap.css -->
+    <link rel="stylesheet" href="../../assets/bootstrap/custom-theme.css"/>
+
+    <!-- link para js -->
+    <script defer type="module" src="../../main.js"></script>
+    <script defer src="../../assets/util/search.js"></script>
+
+    <!-- link para favicon -->
+    <link rel="icon" href="../../assets/img/logo.png" />
+
+    <title>Listas de quadrinhos</title>
+
+</head>
+
+<body class="bg-light">
+
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-primary-lightest py-3 pb-4">
+            <div class="container-lg">
+                <a class="navbar-brand me-5 ms-5" href="#">
+                    <img class="logo" src="../../assets/img/logo.png" alt="logo" />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                
+                <!-- Search Bar -->
+                <form class="d-flex me-lg-auto col-lg-5 pt-2" role="search">
+                <input
+                    id="queryName"
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Pesquise por título, autor, editora.."
+                    aria-label="Search"
+                />
+                <button id="search" class="btn btn-secondary" type="submit">
+                    <i class="bi bi-search"></i>
+                </button>
+                </form>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item mx-md-4">
+                    <a id="home" class="nav-link active" aria-current="page" href=""
+                    >Home</a
+                    >
+                </li>
+                <li class="nav-item mx-md-4">
+                    <a id="listas" class="nav-link" href="">Listas</a>
+                </li>
+                <li class="nav-item mx-md-4">
+                    <a id="sair" class="nav-link" href="">Sair</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+        
+    <main class="content">
+        <section class="center">
+
+            <section class="novaLista">
+
+                <div class="itemPrincipal">
+                    <div class="criarImg"> <a href="#"> <img src="../../assets/img/novaPasta.png" alt="Nova Pasta"> </a> </div><!-- criarImg -->
+                    <a href="#"> Criar nova lista </a>
+                </div><!-- itemPrincipal -->
+
+                <div class="item">
+                    <h4> Titulo lista </h4>
+                    <div class="contentLateral">
+                        <div class="totalQuadrinhos"> <h4> 8 quadrinhos </h4> </div><!-- totalQuadrinhos -->
+                        <div class="editar"> <a href="#"> <img src="../../assets/img/editar.png" alt="Editar"> </a> </div><!-- editar -->
+                        <div class="excluir"> <a href="#"> <img src="../../assets/img/excluir.png" alt="Excluir"> </a> </div><!-- excluir -->
+                    </div><!-- contentLateral -->
+                </div><!-- item -->
+
+                <div class="item">
+                    <h4> Titulo lista </h4>
+                    <div class="contentLateral">
+                        <div class="totalQuadrinhos"> <h4> 8 quadrinhos </h4> </div><!-- totalQuadrinhos -->
+                        <div class="editar"> <a href="#"> <img src="../../assets/img/editar.png" alt="Editar"> </a> </div><!-- editar -->
+                        <div class="excluir"> <a href="#"> <img src="../../assets/img/excluir.png" alt="Excluir"> </a> </div><!-- excluir -->
+                    </div><!-- contentLateral -->
+                </div><!-- item -->
+
+                <div class="item">
+                    <h4> Titulo lista </h4>
+                    <div class="contentLateral">
+                        <div class="totalQuadrinhos"> <h4> 8 quadrinhos </h4> </div><!-- totalQuadrinhos -->
+                        <div class="editar"> <a href="#"> <img src="../../assets/img/editar.png" alt="Editar"> </a> </div><!-- editar -->
+                        <div class="excluir"> <a href="#"> <img src="../../assets/img/excluir.png" alt="Excluir"> </a> </div><!-- excluir -->
+                    </div><!-- contentLateral -->
+                </div><!-- item -->
+
+            </section><!-- novaLista -->
+
+        </section><!-- center -->
+    </main><!-- centent -->
+
+
+    
+    
+    <footer class="container-fluid bg-primary-lightest">
+        <small>Clube do Quadrinho - 2023</small>
+    </footer>
+  
+</body>
+</html>
