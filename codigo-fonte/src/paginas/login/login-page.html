@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Entre no clube do quadrinho</title>
     <link rel="stylesheet" href="../../assets/bootstrap/custom-theme.css" />
     <link rel="stylesheet" href="login-page.css" />
-    <script defer type="module" src="../../main.js"></script>
+    <script defer  src="../../main.js"></script>
+    <script defer  src="../../paginas/login/login-page.js"></script>
     <script defer src="../../assets/util/search.js"></script>
+    <!-- Variáveis de âmbiente  -->
+    <script defer src="../../env.js"></script>
+    <!-- Serviços  -->
+    <script defer src="../../services/criptografy-service/criptografy-service.js"></script>
+    <script defer  src="../../services/account-service/account-service.js"></script>
   </head>
 
   <body class="bg-light">
@@ -70,29 +75,30 @@
           <h1 id="titulo-quadrinho" class="display-medium mb-5">
             Entre no clube do quadrinho
           </h1>
-          <form>
+          <form class="login">
             <div class="form-group">
-              <label for="exampleInputEmail1" class="mb-1"
+              <label for="email" class="mb-1"
                 >Endereço de email</label
               >
               <input
                 type="email"
                 class="form-control mb-3"
-                id="exampleInputEmail1"
+                id="email"
                 aria-describedby="emailHelp"
                 placeholder="Seu email"
               />
             </div>
             <div class="form-group">
-              <label for="exampleInputPassword1" class="mb-1">Senha</label>
+              <label for="password" class="mb-1">Senha</label>
               <input
                 type="password"
                 class="form-control mb-3"
-                id="exampleInputPassword1"
+                id="password"
                 placeholder="Senha"
               />
             </div>
-            <button type="submit" class="btn btn-primary mb-5">Enviar</button>
+            <small id="error" class="inactive error w100">Usuário ou senha incorretos</small>
+            <button id="btnLogin" type="submit" class="btn btn-primary mb-5">Enviar</button>
           </form>
         </div>
       </div>

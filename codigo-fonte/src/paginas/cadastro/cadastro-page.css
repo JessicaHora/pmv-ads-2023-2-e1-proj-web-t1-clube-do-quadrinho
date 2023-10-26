@@ -56,3 +56,8 @@ footer {
     margin: 0;
   }
 }
+
+form.cadastrar{
+  display: flex;
+  flex-direction: column;
+}
