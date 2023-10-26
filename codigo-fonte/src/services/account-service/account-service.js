@@ -28,3 +28,8 @@ function buscarUsuarioPorEmail(email) {
     return usuario.email === email;
   });
 }
+
+function usuarioLogado() {
+  var usuario = JSON.parse(sessionStorage.getItem("usuario"));
+  return usuario;
+}
