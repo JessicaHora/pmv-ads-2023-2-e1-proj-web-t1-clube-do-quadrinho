@@ -1,5 +1,7 @@
+import { criptografar } from "../criptografy-service/criptografy-service.js";
+
 function cadastrarUsuario(username, email, senha) {
-  senha = criptografar(senha);
+  var senha = criptografar(senha);
   // Recuperar os usuários existentes do localStorage (se houver)
   var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
   // Criar um novo objeto de usuário
@@ -33,3 +35,7 @@ function usuarioLogado() {
   var usuario = JSON.parse(sessionStorage.getItem("usuario"));
   return usuario;
 }
+
+console.log(buscarTodosUsuarios())
+
+export { cadastrarUsuario, buscarTodosUsuarios, buscarUsuarioPorNome, buscarUsuarioPorEmail, usuarioLogado };
