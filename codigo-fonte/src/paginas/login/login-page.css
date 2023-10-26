@@ -56,3 +56,19 @@ footer {
     margin: 0;
   }
 }
+
+form.login{
+  display: flex;
+  flex-direction: column;
+}
+
+.error {
+  margin: 1rem;
+  color: rgba(255, 0, 0, 0.4);
+  background-color: rgba(255, 0, 0, 0.2);
+  text-align: center;
+}
+
+.inactive{
+  display: none;
+}

@@ -1,4 +1,3 @@
-
 function cadastrarUsuario(username, email, senha) {
   senha = criptografar(senha);
   // Recuperar os usuários existentes do localStorage (se houver)
@@ -17,12 +16,14 @@ function buscarTodosUsuarios() {
 }
 
 function buscarUsuarioPorNome(nome) {
+  var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
   return usuarios.find(function (usuario) {
     return usuario.nome === nome;
   });
 }
 
 function buscarUsuarioPorEmail(email) {
+  var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
   return usuarios.find(function (usuario) {
     return usuario.email === email;
   });
