@@ -1,14 +1,17 @@
-btnLogin = document.getElementById("btnLogin");
+import { buscarUsuarioPorEmail } from "../../services/account-service/account-service.js";
+import { criptografar, descriptografar } from "../../services/criptografy-service/criptografy-service.js";
+
+var btnLogin = document.getElementById("btnLogin");
 btnLogin.addEventListener("click", (event) => {
   entrar(event);
 });
 
 var entrar = (event) => {
   event.preventDefault();
-  email = document.getElementById("email").value;
-  senha = document.getElementById("password").value;
+  var email = document.getElementById("email").value;
+  var senha = document.getElementById("password").value;
 
-  usuario = buscarUsuarioPorEmail(email);
+  var usuario = buscarUsuarioPorEmail(email);
 
   if (usuario !== undefined) {
     usuario.senha = descriptografar(usuario.senha);

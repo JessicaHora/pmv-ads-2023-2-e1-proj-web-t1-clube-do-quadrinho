@@ -1,9 +1,11 @@
+import { cadastrarUsuario } from "../../services/account-service/account-service.js";
+
 window.onload = () => {
   // dados do formulário
-  username = document.getElementById("username");
-  email = document.getElementById("email");
-  senha = document.getElementById("senha");
-  btnCadastrar = document.getElementById("btn-cadastrar");
+  var username = document.getElementById("username");
+  var email = document.getElementById("email");
+  var senha = document.getElementById("senha");
+  var btnCadastrar = document.getElementById("btn-cadastrar");
 
   btnCadastrar.addEventListener("click", (event) => {
     cadastrarUsuario(username.value, email.value, senha.value);

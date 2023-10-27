@@ -1,5 +1,7 @@
+import { env } from "../../env.js";
+
 function criptografar(texto) {
-  chave = env.encryptionKey;
+  let chave = env.encryptionKey;
   let resultado = "";
   for (let i = 0; i < texto.length; i++) {
     let char = texto.charCodeAt(i);
@@ -12,7 +14,7 @@ function criptografar(texto) {
 
 // Função para descriptografar uma string usando uma chave
 function descriptografar(textoCriptografado) {
-  chave = env.encryptionKey;
+  let chave = env.encryptionKey;
   let texto = atob(textoCriptografado); // Decodifica a partir de Base64
   let resultado = "";
   for (let i = 0; i < texto.length; i++) {
@@ -23,3 +25,5 @@ function descriptografar(textoCriptografado) {
   }
   return resultado;
 }
+
+export { criptografar, descriptografar };
