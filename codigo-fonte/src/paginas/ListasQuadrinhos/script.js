@@ -257,7 +257,7 @@ function validarAcerto() {
 
     document.getElementById('fechar').style.color = 'green';
 
-    document.getElementById('mensagem2').innerHTML = "Despesa foi cadastrada com sucesso";
+    document.getElementById('mensagem2').innerHTML = "Sua lista foi cadastrada com sucesso";
     document.getElementById('mensagem2').style.color = '#ffffff';
 
     document.getElementById('fechar1').style.color = 'green';
