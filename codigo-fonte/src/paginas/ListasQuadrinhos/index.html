@@ -28,7 +28,7 @@
 
 </head>
 
-<body class="bg-light">
+<body class="bg-light" onload="carregarLista(), totalLista()">
 
 
     <header>
@@ -87,38 +87,46 @@
             <section class="novaLista">
 
                 <div class="itemPrincipal">
-                    <div class="criarImg"> <a href="#"> <img src="../../assets/img/novaPasta.png" alt="Nova Pasta"> </a> </div><!-- criarImg -->
-                    <a href="#"> Criar nova lista </a>
+                    <div class="criarImg"> <a href="./lista.html"> <img src="../../assets/img/novaPasta.png" alt="Nova Pasta"> </a> </div><!-- criarImg -->
+                    <a href="./lista.html"> Criar nova lista </a>
                 </div><!-- itemPrincipal -->
 
-                <div class="item">
-                    <h4> Titulo lista </h4>
-                    <div class="contentLateral">
-                        <div class="totalQuadrinhos"> <h4> 8 quadrinhos </h4> </div><!-- totalQuadrinhos -->
-                        <div class="editar"> <a href="#"> <img src="../../assets/img/editar.png" alt="Editar"> </a> </div><!-- editar -->
-                        <div class="excluir"> <a href="#"> <img src="../../assets/img/excluir.png" alt="Excluir"> </a> </div><!-- excluir -->
-                    </div><!-- contentLateral -->
-                </div><!-- item -->
-
-                <div class="item">
-                    <h4> Titulo lista </h4>
-                    <div class="contentLateral">
-                        <div class="totalQuadrinhos"> <h4> 8 quadrinhos </h4> </div><!-- totalQuadrinhos -->
-                        <div class="editar"> <a href="#"> <img src="../../assets/img/editar.png" alt="Editar"> </a> </div><!-- editar -->
-                        <div class="excluir"> <a href="#"> <img src="../../assets/img/excluir.png" alt="Excluir"> </a> </div><!-- excluir -->
-                    </div><!-- contentLateral -->
-                </div><!-- item -->
-
-                <div class="item">
-                    <h4> Titulo lista </h4>
-                    <div class="contentLateral">
-                        <div class="totalQuadrinhos"> <h4> 8 quadrinhos </h4> </div><!-- totalQuadrinhos -->
-                        <div class="editar"> <a href="#"> <img src="../../assets/img/editar.png" alt="Editar"> </a> </div><!-- editar -->
-                        <div class="excluir"> <a href="#"> <img src="../../assets/img/excluir.png" alt="Excluir"> </a> </div><!-- excluir -->
-                    </div><!-- contentLateral -->
-                </div><!-- item -->
+                <div class="listaVazia"> <h4 id="listaVazia"> </h4> </div><!-- listaVazia -->
 
             </section><!-- novaLista -->
+
+            <section class="guardaLista">
+                <table>
+
+                    <div class="thead" id="thead">
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <h3> Titulo </h3>
+                            <h3> Descrição </h3>
+                        </div>
+
+                    </div><!-- thead -->
+
+                    <div class="tbody" id="tbody">
+
+                        <!-- 
+                            <div class="listaItem">
+                                <div class="titulo"> titulo </div>
+                                <div class="descricao">  
+
+                                    <div class="description"> descricao do titulo </div>
+                                    <div class="editarLista"> editar </div>
+                                    <div class="removerLista"> X </div>
+
+                                </div>
+                            </div>
+                        -->
+
+
+                   </div><!-- tbody -->
+
+                </table>
+            </section><!-- guardalista -->
 
         </section><!-- center -->
     </main><!-- centent -->
@@ -129,6 +137,21 @@
     <footer class="container-fluid bg-primary-lightest">
         <small>Clube do Quadrinho - 2023</small>
     </footer>
+
+    <!-- script.js -->
+    <script src="./script.js"></script>
+
+    <!-- Bootstrap Scripts-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
   
 </body>
 </html>

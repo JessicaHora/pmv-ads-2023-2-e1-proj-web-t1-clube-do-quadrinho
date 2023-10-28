@@ -8,6 +8,7 @@
     box-sizing: border-box;
 }
 
+
 .center {
     width: 100%;
     max-width: 1280px;
@@ -23,86 +24,261 @@
     *
 *****/
 .content .novaLista {
+    position: relative;
     width: 100%;
     border: 1px solid #DFE0FF;
     border-radius: 10px;
     margin-top: 90px;
-}
-
-.content .novaLista .item {
-    width: 100%;
-    height: 100px;
-    padding: 0 2%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #DFE0FF;
-    
+    flex-direction: column;
 }
 
 .content .novaLista .itemPrincipal {
     width: 100%;
     height: 100px;
     padding: 0 2%;
+    margin: 30px 0;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
-.content .novaLista .itemPrincipal img,
-.content .novaLista .item .contentLateral img {
+.content .novaLista .itemPrincipal img {
     width: 32px;
     height: 28px;
 }  
 
-.content .novaLista .itemPrincipal a,
-.content .novaLista .item .contentLateral a {
+.content .novaLista .itemPrincipal a {
     text-decoration: none;
     margin-left: 20px;
-    padding: 8px 20px;
+    padding: 20px 40px;
     border-radius: 20px;
     font-size: 21px;
     background-color: #DFE0FF;
     color: #000000;
-    border: 1px solid #DFE0FF;
 }
 
-.content .novaLista .itemPrincipal a:hover,
-.content .novaLista .item .contentLateral a:hover {
+.content .novaLista .itemPrincipal a:hover {
     background-color: #b8b9ee;
 }
 
-
-.content .novaLista .item h4 {
-    margin-left: 20px;
-    padding: 8px 20px;
-    border-radius: 20px;
-    font-size: 21px;
-    background-color: #DFE0FF;
-    color: #000000;
-    border: 1px solid #DFE0FF;
+@keyframes  seta{
+    from {
+        margin-left: 20px;
+    }
+    to {
+        margin-right: 40px;
+    }
 }
 
-.content .novaLista .item .contentLateral {
+.content #listaVazia {
+    display: none
+}
+
+.content .listaVazia {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
+
+.content .listaVazia h4::after {
+    content: "Sua lista está vazia!";
+    font-size: 21px;
+    padding: 10px 0;
+    animation: seta 1.5s ease-in 0s infinite alternate;
+}
+
+
+
+/*********
+    * Formatação guardaLista
+*****/
+.guardaLista {
+    width: 100%;
+    padding: 40px 0 20px;
+}
+
+.guardaLista .thead {
+    display: block;
+}
+
+.thead h3 {
+    display: inline-block;
+    background-color: #DFE0FF;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.thead h3:nth-child(1),
+.tbody .titulo {
+    width: 30%;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+}
+
+.thead h3:nth-child(2),
+.tbody .descricao {
+    width: 69.8%;
+    border-radius: 0 10px 10px 0;
+}
+
+
+.listaItem {
+    display: flex;
+    margin: 10px 0;
+    border-bottom: 2px solid #b8b9ee;
+}
+
+.tbody .titulo {
+    font-size: 21px;
+    padding: 10px 0;
+}
+
+.tbody .descricao {
+    font-size: 21px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao .description {
+    width: 70%;
+    text-align: center;
+}
+
+.descricao .editarLista {
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #DFE0FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.descricao .editarLista:hover {
+    background-color: #b8b9ee;
+}
+
+.descricao .removerLista {
+    width: 50px;
+    margin-right: 20px;
+    font-size: 21px;
+    font-weight: 600;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.descricao .removerLista:hover {
+    background-color: rgb(185, 9, 9);
+}
+
+
+
+
+
+
+
+
+
+
+/*********
+    * Formatação validar lista
+*****/
+.validar {
+    display: none;
+    width: 100%;
+    max-width: 670px;
+    position: absolute;
+    top: 120px;
+    right: 60px;
+    border-radius: 20px;
+}
+
+.validar .item {
+    border: 1px solid #ffffff;
+    box-shadow: 2px 2px 5px 0 #ffffff;
+}
+
+.validar .item h3 {
+    font-size: 20px;
+}
+
+.validar .item:nth-child(1) {
+    padding: 10px 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.validar .item #fechar,
+.validar .item #fechar1 {
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.validar .item:nth-child(2) {
+    padding: 14px 2%;
+}
+
+.validar .item:nth-child(3) {
+    text-align: right;
+    padding: 20px 2%;
+    border-radius: 0 0 20px 20px;
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 768px) {
 
+    .content {
+        padding: 2%;
+    }
 
-    .content .novaLista .item {
-        height: auto;
-        padding: 20px 2%;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-        
+    .validar {
+        max-width: 600px;
+        right: 30px;
     }
 
 }
+
+
+
+@media screen and (max-width: 658px) {
+
+    .validar {
+        max-width: 500px;
+        right: 30px;
+    }
+
+}
+
+@media screen and (max-width: 548px) {
+
+    .validar {
+        max-width: 450px;
+        right: 20px;
+    }
+
+}
+
 
 
 
