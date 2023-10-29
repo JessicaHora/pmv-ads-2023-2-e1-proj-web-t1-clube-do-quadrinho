@@ -9,7 +9,7 @@ search.addEventListener('click', (event) => {
 
 //renderizar resultados da pesquisa
 function renderComicsResults(query) {
-    fetch('../../util/comicsDb.json').then(response => {
+    fetch('../../database/comicsDb.json').then(response => {
         return response.json();
     }).then(data => {
         let comics = data.comics;
