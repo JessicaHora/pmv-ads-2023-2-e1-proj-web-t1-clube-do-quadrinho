@@ -5,7 +5,16 @@ function cadastrarUsuario(username, email, senha) {
   // Recuperar os usuários existentes do localStorage (se houver)
   var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
   // Criar um novo objeto de usuário
-  var novoUsuario = { username: username, email: email, senha: senha };
+  var novoUsuario = {
+    username: username,
+    email: email,
+    senha: senha,
+    quadrinhos: {
+      lido: [],
+      lendo: [],
+      queroLer: [],
+    }
+  };
   // Adicionar o novo usuário ao array
   usuarios.push(novoUsuario);
   // Atualizar o localStorage com o novo array de usuários
