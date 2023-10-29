@@ -51,7 +51,8 @@
 |RF-07   |O sistema deve oferecer uma funcionalidade de filtro/pesquisa na página de quadrinhos registrados.   |Média   |
 |RF-08   |O sistema deve permitir ao usuário visualizar as informações dos quadrinhos.   |Média   |
 |RF-09   |O sistema deve permitir ao usuário fazer o login da sua conta.   |Alta   |
-|RF-10   |O sistema deve permitir ao usuário criar listas individuais para registro de quadrinhos, para organização da forma que o usuário desejar (por gênero, personagem, etc.). A estrutura dos quadrinhos das listas deve seguir as categorias de lidos, lendo e a ler.   |Alta   |
+|RF-10   |O sistema deve permitir o usuário visualizar  e interagir com suas listas criadas.   |Alta   |
+|RF-11   |O sistema deve permitir o usuário criar, editar e deletar listas de quadrinhos customizadas.    |Alta   |
 
 
 **Prioridade: Alta / Média / Baixa. 

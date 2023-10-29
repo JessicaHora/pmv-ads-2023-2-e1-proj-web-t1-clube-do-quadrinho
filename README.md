@@ -10,7 +10,6 @@ O projeto consiste em desenvolver um sistema de organização de leitura de quad
 
 ## Integrantes
 
-* Cristiane Queiroz de Brito
 * Jessica Hora dos Santos
 * Marcos Vinicio Araujo Almeida
 * Nico Rocha da Costa
