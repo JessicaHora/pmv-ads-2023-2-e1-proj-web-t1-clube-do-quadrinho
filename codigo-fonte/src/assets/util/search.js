@@ -54,6 +54,10 @@ function renderComicsResults(query) {
                 h5.classList.add('card-title', 'headline-small');
                 title.classList.add('text-primary');
                 title.href = `quadrinho.html?id=${comic.id}`;
+                title.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    window.location.replace(`${window.location.origin}/codigo-fonte/src/paginas/paginaQuadrinho/quadrinho.html?id=${comic.id}`);
+                })
                 title.style.textDecoration = 'none';
                 title.innerHTML = comic.title;
                 h5.appendChild(title);
