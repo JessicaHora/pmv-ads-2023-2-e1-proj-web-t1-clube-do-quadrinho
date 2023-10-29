@@ -6,7 +6,8 @@
     <title>Página Quadrinho</title>
     <link rel="stylesheet" href="../../assets/bootstrap/custom-theme.css" />
     <link rel="stylesheet" href="quadrinho-style.css" />
-    <script defer type="module" src="../../main.js"></script>
+    <script defer src="../../main.js"></script>
+    <script type="module" defer src="quadrinho.js"></script>
     <script defer src="../../assets/util/search.js"></script>
   </head>
 
@@ -70,9 +71,10 @@
             alt="capa quadrinho"
           />
           <div class="actionBox">
+            <a class="message" href="../login/login-page.html">Faça login para adicionar e avaliar quadrinhos</a>
             <!-- avaliar quadrinho -->
             <div
-              class="quadrinho-avaliar col-12 mt-1 mb-1"
+              class="quadrinho-avaliar col-12 mt-1 mb-1 d-none"
               id="avaliarQuadrinho"
             >
               <input
@@ -119,21 +121,15 @@
             <!-- adicionar quadrinho -->
             <div>
               <select
-                class="form-select col-12 bg-primary text-white text-center"
+                class="form-select col-12 bg-primary text-white text-center d-none"
                 id="adicionarQuadrinho"
-              >
-                <option selected class="bg-white text-black">Adicionar</option>
-                <option value="1" class="bg-white text-black">Lido</option>
-                <option value="2" class="bg-white text-black">Lendo</option>
-                <option value="3" class="bg-white text-black">Quero ler</option>
-                <option value="4" class="d-none bg-white text-black">
-                  Excluir
-                </option>
+              > 
+                
               </select>
-            </div>
             <!-- adicionar quadrinho a lista -->
             <button
-              class="btn btn-primary mt-3 col-12"
+              class="btn btn-primary mt-3 col-12 d-none"
+              id="adicionarLista"
               data-bs-toggle="modal"
               data-bs-target="#addlista"
             >
