@@ -36,6 +36,15 @@ function usuarioLogado() {
   return usuario;
 }
 
-console.log(buscarTodosUsuarios())
+function logout() {
+  sessionStorage.clear();
+}
 
-export { cadastrarUsuario, buscarTodosUsuarios, buscarUsuarioPorNome, buscarUsuarioPorEmail, usuarioLogado };
+export {
+  cadastrarUsuario,
+  buscarTodosUsuarios,
+  buscarUsuarioPorNome,
+  buscarUsuarioPorEmail,
+  usuarioLogado,
+  logout,
+};

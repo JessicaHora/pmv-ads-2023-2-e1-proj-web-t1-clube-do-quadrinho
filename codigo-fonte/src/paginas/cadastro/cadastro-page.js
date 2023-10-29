@@ -9,5 +9,6 @@ window.onload = () => {
 
   btnCadastrar.addEventListener("click", (event) => {
     cadastrarUsuario(username.value, email.value, senha.value);
+    window.location.href = "../login/login-page.html"
   });
 };
