@@ -75,7 +75,7 @@ async function addComicsByStatus(status, id) {
                     return;
             }
             //salvar lista autalizada no localStorage
-            localStorage.setItem(`usuario-${user.email}`, JSON.stringify(user));
+            localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
             //atualizar objeto de usuário no sessionStorage
             sessionStorage.setItem("usuario", JSON.stringify(user));
         } else {

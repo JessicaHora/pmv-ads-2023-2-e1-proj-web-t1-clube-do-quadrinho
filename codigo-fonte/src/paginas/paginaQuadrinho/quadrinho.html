@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="quadrinho-style.css" />
   <script defer type="module" defer src="quadrinho.js"></script>
   <script defer src="../../assets/util/search.js"></script>
+  <script defer type="module" src="../../assets/util/logout.js"></script>
 </head>
 
 <body class="bg-light">
@@ -33,13 +34,13 @@
           </form>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item mx-md-4">
-              <a id="home" class="nav-link active" aria-current="page" href="">Home</a>
+              <a id="home" class="nav-link d-none" aria-current="page" href="">Home</a>
             </li>
             <li class="nav-item mx-md-4">
-              <a id="listas" class="nav-link" href="../ListasQuadrinhos/index.html">Listas</a>
+              <a id="listas" class="nav-link d-none" href="../paginaListas/index.html">Listas</a>
             </li>
             <li class="nav-item mx-md-4">
-              <a id="sair" class="nav-link">Sair</a>
+              <a id="sair" class="nav-link d-none">Sair</a>
             </li>
           </ul>
         </div>
@@ -101,18 +102,29 @@
             Adicionar à lista
           </button>
           <!-- Modal adiocionar quadrinho à lista-->
-          <div class="modal fade" id="addlista" tabindex="-1" aria-labelledby="addlista" aria-hidden="true">
-            <div class="modal-dialog">
+          <div class="modal modal-lg fade" data-bs-backdrop="static" id="addlista" tabindex="-1" aria-labelledby="addlista" aria-hidden="true" data-bs-back>
+            <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="addlista">
+                  <h1 class="modal-title fs-3">
                     Adicionar quadrinho à lista
                   </h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">...</div>
+                <div class="modal-body">
+                  <div id="novaLista" class="px-2 bg-light mb-3">
+                    <a class="text-decoration-none title-large" href="./lista.html">
+                      <i class="bi bi-folder-plus pe-2"></i>
+                      Criar nova lista
+                    </a>
+                  </div>
+                  <table class="table table-hover table-responsive-md">
+                    <tbody>
+                    </tbody>
+                  </table>
+                </div>
                 <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                  <button type="button" class="btn btn-tertiary" data-bs-dismiss="modal">
                     Cancelar
                   </button>
                   <button type="button" class="btn btn-primary">

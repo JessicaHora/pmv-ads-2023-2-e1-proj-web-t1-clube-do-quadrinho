@@ -6,6 +6,7 @@ function cadastrarUsuario(username, email, senha) {
   var usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
   // Criar um novo objeto de usuário
   var novoUsuario = {
+    id: usuarios.length + 1,
     username: username,
     email: email,
     senha: senha,
@@ -13,7 +14,8 @@ function cadastrarUsuario(username, email, senha) {
       lido: [],
       lendo: [],
       queroLer: [],
-    }
+    },
+    listas: []
   };
   // Adicionar o novo usuário ao array
   usuarios.push(novoUsuario);
