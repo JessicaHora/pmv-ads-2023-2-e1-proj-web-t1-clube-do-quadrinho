@@ -12,6 +12,10 @@
     --bs-nav-link-hover-color: #2B3BA0;
 }
 
+#sair {
+    cursor: pointer;
+}
+
 /*  */
 
 /* BODY CSS */
@@ -23,9 +27,6 @@ body {
 
 }
 
-h1 {
-    margin-left: 4.6em;
-}
 
 /* CONTENT CSS */
 section {
