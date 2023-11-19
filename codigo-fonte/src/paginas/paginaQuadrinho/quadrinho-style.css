@@ -12,6 +12,16 @@
     --bs-nav-link-hover-color: #2B3BA0;
 }
 
+#queryName {
+    border-radius: 0.3rem 0 0 0.3rem;
+    border-style: unset;
+}
+
+#search {
+    border-radius: 0 0.3rem 0.3rem 0;
+
+}
+
 #sair {
     cursor: pointer;
 }
@@ -103,7 +113,7 @@ footer {
     flex: 0 1 auto;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
     position: relative;
     color: #343a40;
     margin-top: 2rem;

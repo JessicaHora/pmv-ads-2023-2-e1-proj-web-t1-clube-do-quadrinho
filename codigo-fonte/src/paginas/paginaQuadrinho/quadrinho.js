@@ -6,9 +6,11 @@ import { Bd } from "../../services/lists-service/lists-service.js"
 
 let linksId = document.querySelectorAll('a[href*="quadrinho.html?id="]');
 let urlParams = new URLSearchParams(window.location.search);
-let id = parseInt(urlParams.get("id"), 10);
+let id = urlParams.get("id");
 let quadrinhoStatus = document.getElementById("adicionarQuadrinho");
 let toastElement = document.querySelector('.toast');
+let addListaModal = document.getElementById('addListaModal');
+let bd = new Bd();
 
 //renderizar página de quadrinho
 function renderComicsPage(comic) {
@@ -27,13 +29,33 @@ function renderComicsPage(comic) {
     let navItem2 = document.querySelectorAll('.nav-item')[1];
     navItem2.appendChild(cadastro);
     //content
-    document.head.querySelector('title').innerHTML = comic.title;
-    document.getElementById('capa-quadrinho').src = comic.image;
-    document.getElementById('titulo-quadrinho').innerHTML = comic.title;
-    document.getElementById('criadores').innerHTML = comic.creators;
-    document.getElementById('descricao').innerHTML = comic.description;
-    document.getElementById('data').innerHTML = `Data de lançamento: ${comic.release_date}`
-    document.getElementById('editora').innerHTML = `Editora: ${comic.publisher}`;
+    document.head.querySelector('title').innerHTML = comic.volumeInfo.title;
+    let thumbnailUrl = comic.volumeInfo.imageLinks.thumbnail;
+    thumbnailUrl = thumbnailUrl.replace('zoom=1', 'zoom=0');
+    document.getElementById('capa-quadrinho').src = thumbnailUrl;
+    document.getElementById('titulo-quadrinho').innerHTML = comic.volumeInfo.title;
+    document.getElementById('criadores').innerHTML = comic.volumeInfo.authors.join(', ');
+    document.getElementById('descricao').innerHTML = comic.volumeInfo.description;
+    let publishedDate = new Date(comic.volumeInfo.publishedDate);
+    let day = String(publishedDate.getDate()).padStart(2, '0');
+    let month = String(publishedDate.getMonth() + 1).padStart(2, '0');
+    let year = publishedDate.getFullYear();
+    let date = `${day}/${month}/${year}`;
+    if (comic.volumeInfo.publishedDate) {
+      document.getElementById('data').innerHTML = `Data de lançamento: ${date}`
+    } else {
+      document.getElementById('data').innerHTML = `Data de lançamento: Não informado`
+    }
+    if (comic.volumeInfo.publisher) {
+      document.getElementById('editora').innerHTML = `Editora: ${comic.volumeInfo.publisher}`;
+    } else {
+      document.getElementById('editora').innerHTML = `Editora: Não informado`;
+    }
+    if (comic.volumeInfo.pageCount) {
+      document.getElementById('paginas').innerHTML = `Número de páginas: ${comic.volumeInfo.pageCount}`;
+    } else {
+      document.getElementById('paginas').innerHTML = `Número de páginas: Não informado`;
+    }
     let content = document.querySelector('.actionBox');
     content.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'h-100', 'bg-tertiary-light', 'text-center', 'body-small', 'p-2', 'rounded', 'mt-2');
   } else {
@@ -45,31 +67,54 @@ function renderComicsPage(comic) {
     document.getElementById('adicionarQuadrinho').classList.remove('d-none')
     document.getElementById('adicionarLista').classList.remove('d-none');
     document.getElementById('avaliarQuadrinho').classList.remove('d-none');
-    document.head.querySelector('title').innerHTML = comic.title;
-    document.getElementById('capa-quadrinho').src = comic.image;
-    document.getElementById('titulo-quadrinho').innerHTML = comic.title;
-    document.getElementById('criadores').innerHTML = comic.creators;
-    document.getElementById('descricao').innerHTML = comic.description;
-    document.getElementById('data').innerHTML = `Data de lançamento: ${comic.release_date}`
-    document.getElementById('editora').innerHTML = `Editora: ${comic.publisher}`;
+    document.head.querySelector('title').innerHTML = comic.volumeInfo.title;
+    let thumbnailUrl = comic.volumeInfo.imageLinks.thumbnail;
+    thumbnailUrl = thumbnailUrl.replace('zoom=1', 'zoom=0');
+    document.getElementById('capa-quadrinho').src = thumbnailUrl;
+    document.getElementById('titulo-quadrinho').innerHTML = comic.volumeInfo.title;
+    // document.getElementById('avaliacoes-quadrinhos').innerHTML = comic.volumeInfo.ratingsCount;
+    document.getElementById('criadores').innerHTML = comic.volumeInfo.authors.join(', ');
+    document.getElementById('descricao').innerHTML = comic.volumeInfo.description;
+    let publishedDate = new Date(comic.volumeInfo.publishedDate);
+    let day = String(publishedDate.getDate()).padStart(2, '0');
+    let month = String(publishedDate.getMonth() + 1).padStart(2, '0');
+    let year = publishedDate.getFullYear();
+    let date = `${day}/${month}/${year}`;
+    if (comic.volumeInfo.publishedDate) {
+      document.getElementById('data').innerHTML = `Data de lançamento: ${date}`
+    } else {
+      document.getElementById('data').innerHTML = `Data de lançamento: Não informado`
+    }
+    if (comic.volumeInfo.publisher) {
+      document.getElementById('editora').innerHTML = `Editora: ${comic.volumeInfo.publisher}`;
+    } else {
+      document.getElementById('editora').innerHTML = `Editora: Não informado`;
+    }
+    if (comic.volumeInfo.pageCount) {
+      document.getElementById('paginas').innerHTML = `Número de páginas: ${comic.volumeInfo.pageCount}`;
+    } else {
+      document.getElementById('paginas').innerHTML = `Número de páginas: Não informado`;
+    }
     document.querySelector('.message').style.display = 'none';
+
+    //salvar o valor do select no localStorage
+    let user = usuarioLogado();
+    let quadrinhoId = comic.id;
+    quadrinhoStatus.addEventListener('change', () => {
+      localStorage.setItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption`, quadrinhoStatus.value);
+    });
+    // buscar o valor do select no localStorage
+    let selectedOption = localStorage.getItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption`);
+    if (selectedOption) {
+      quadrinhoStatus.value = selectedOption;
+      quadrinhoStatus.querySelector(`option[value="${selectedOption}"]`).setAttribute('selected', 'selected');
+    }
+    // remover o valor do select no localStorage quando o usuário sair da página
+    window.addEventListener('beforeunload', () => {
+      localStorage.removeItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption}`);
+    });
   }
-  //salvar o valor do select no localStorage
-  let user = usuarioLogado();
-  let quadrinhoId = comic.id;
-  quadrinhoStatus.addEventListener('change', () => {
-    localStorage.setItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption`, quadrinhoStatus.value);
-  });
-  // buscar o valor do select no localStorage
-  let selectedOption = localStorage.getItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption`);
-  if (selectedOption) {
-    quadrinhoStatus.value = selectedOption;
-    quadrinhoStatus.querySelector(`option[value="${selectedOption}"]`).setAttribute('selected', 'selected');
-  }
-  // remover o valor do select no localStorage quando o usuário sair da página
-  window.addEventListener('beforeunload', () => {
-    localStorage.removeItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption}`);
-  });
+
 }
 
 linksId.forEach(link => {
@@ -85,7 +130,7 @@ comicsService.getComicsById(id)
     renderComicsPage(comic);
   }).catch(err => {
     console.error(err);
-  })
+  });
 
 
 //verificação da opção excluir no select
@@ -120,7 +165,7 @@ function updateSelect() {
 
 window.addEventListener('load', () => {
   updateSelect();
-})
+});
 
 quadrinhoStatus.addEventListener('change', async () => {
   let status = quadrinhoStatus.value;
@@ -150,7 +195,7 @@ options.forEach(option => {
   }
 });
 
-//toasts
+//toasts adicionar quadrinho
 if (quadrinhoStatus && toastElement) {
   let toast = new bootstrap.Toast(toastElement);
   quadrinhoStatus.addEventListener('change', () => {
@@ -178,7 +223,7 @@ if (quadrinhoStatus && toastElement) {
 
 //carregar listas no modal de adicionar quadrinho
 let modalElement = document.getElementById('addlista');
-modalElement.addEventListener('show.bs.modal', function (event) {
+modalElement.addEventListener('show.bs.modal', function () {
   carregarListaQuadrinho();
 });
 
@@ -189,28 +234,79 @@ modalElementEmpty.addEventListener('hidden.bs.modal', function (event) {
   tabela.innerHTML = '';
 });
 
-let bd = new Bd();
+
 
 function carregarListaQuadrinho() {
-    let registros, dadosBody;
-    registros = Array();
-    registros = bd.recuperarDadosStorage();
-    dadosBody = document.querySelector('tbody');
+  let registros, dadosBody;
+  registros = Array();
+  registros = bd.recuperarDadosStorage();
+  dadosBody = document.querySelector('tbody');
 
-    registros.forEach(function (r) {
-        //Criar um novo elemento tr
-        let tr = document.createElement('tr');
+  registros.forEach(function (r) {
+    //Criar um novo elemento tr
+    let tr = document.createElement('tr');
 
-        //Cria e configura o td do titulo
-        let tdTitulo = document.createElement('td');
-        tdTitulo.className = 'ps-5 title-medium';
-        tdTitulo.style.cursor = 'pointer';
-        let aTitulo = document.createElement('a');
-        // aTitulo.className = 'body-large'
-        aTitulo.innerHTML = r.titulo;
-        tdTitulo.appendChild(aTitulo);
+    //Cria e configura o td do titulo
+    let tdTitulo = document.createElement('td');
+    tdTitulo.className = 'ps-5 title-medium d-flex';
+    tdTitulo.id = 'tituloLista'
+    tdTitulo.style.cursor = 'pointer';
+    tdTitulo.dataset.listId = r.id;
 
-        tr.appendChild(tdTitulo);
-        dadosBody.appendChild(tr);
+    //evento de click no titulo da lista
+    tdTitulo.addEventListener('click', function (event) {
+      let icon = event.target.querySelector('i');
+
+      if (icon) {
+        event.target.style.backgroundColor = '';
+        event.target.removeChild(icon);
+      } else {
+        event.target.style.backgroundColor = '#d7d5d9';
+        icon = document.createElement('i');
+        icon.className = 'bi bi-check-circle';
+        icon.style.color = 'green';
+        event.target.insertBefore(icon, aTitulo)
+      }
     });
+
+    let aTitulo = document.createElement('a');
+    aTitulo.className = 'ps-2 text-decoration-none text-dark'
+
+    // aTitulo.id = 'linkLista'
+    // aTitulo.addEventListener('click', function (event) {
+    //   event.preventDefault();
+    // })
+    // aTitulo.className = 'body-large'
+    aTitulo.innerHTML = r.titulo;
+    tdTitulo.appendChild(aTitulo);
+
+    tr.appendChild(tdTitulo);
+    dadosBody.appendChild(tr);
+  });
 }
+
+addListaModal.addEventListener('click', function () {
+  let selectedList = document.querySelector('#tituloLista i.bi.bi-check-circle');
+  if (selectedList) {
+    let listId = selectedList.parentElement.dataset.listId;
+    comicsService.getComicsById(id)
+      .then(comic => {
+        comicsService.addComicsToList(comic, listId);
+
+        let modal = bootstrap.Modal.getInstance(document.getElementById('addlista'));
+        modal.hide();
+
+        //toast 
+        let toast = new bootstrap.Toast(toastElement);
+        setTimeout(() => {
+          document.querySelector('.toast-body').innerHTML = 'Quadrinho adicionado à lista com sucesso!';
+          toast.show();
+        }, 500);
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  } else {
+    return;
+  }
+})
