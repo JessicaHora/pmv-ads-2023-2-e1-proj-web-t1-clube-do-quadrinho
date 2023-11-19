@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="../../assets/bootstrap/custom-theme.css" />
   <link rel="stylesheet" href="quadrinho-style.css" />
   <script defer type="module" defer src="quadrinho.js"></script>
-  <script defer src="../../assets/util/search.js"></script>
+  <script type="module" defer src="../../assets/util/search.js"></script>
   <script defer type="module" src="../../assets/util/logout.js"></script>
 </head>
 
 <body class="bg-light">
   <header>
-    <nav class="navbar navbar-expand-lg bg-primary-lightest py-3 pb-4">
+    <nav class="navbar navbar-expand-lg bg-primary-lightest py-2">
       <div class="container-lg">
         <a class="navbar-brand me-5 ms-5" href="#">
           <img class="logo" src="../../assets/img/logo.png" alt="logo" />
@@ -25,8 +25,8 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <!-- Search Bar -->
-          <form class="d-flex me-lg-auto col-lg-5 pt-2" role="search">
-            <input id="queryName" class="form-control me-2" type="search"
+          <form class="d-flex me-lg-auto col-lg-5" role="search">
+            <input id="queryName" class="form-control" type="search"
               placeholder="Pesquise por título, autor, editora.." aria-label="Search" />
             <button id="search" class="btn btn-secondary" type="submit">
               <i class="bi bi-search"></i>
@@ -34,7 +34,7 @@
           </form>
           <ul class="navbar-nav mb-2 mb-lg-0">
             <li class="nav-item mx-md-4">
-              <a id="home" class="nav-link d-none" aria-current="page" href="">Home</a>
+              <a id="home" class="nav-link d-none body-large" aria-current="page" href="">Home</a>
             </li>
             <li class="nav-item mx-md-4">
               <a id="listas" class="nav-link d-none" href="../paginaListas/index.html">Listas</a>
@@ -127,7 +127,7 @@
                   <button type="button" class="btn btn-tertiary" data-bs-dismiss="modal">
                     Cancelar
                   </button>
-                  <button type="button" class="btn btn-primary">
+                  <button id="addListaModal" type="button" class="btn btn-primary">
                     Adicionar
                   </button>
                 </div>
@@ -137,12 +137,17 @@
         </div>
       </div>
       <div class="col-sm-10 col-md-8 flex-column align-self-start">
-        <h1 id="titulo-quadrinho" class="display-medium mb-0"></h1>
+        <div class="d-flex flex-column">
+          <h1 id="titulo-quadrinho" class="headline-large mb-0"></h1>
+          <!-- <p id="avaliacoes-quadrinhos" class="me-3 title-small"></p> -->
+        </div>
+        
         <h2 id="criadores" class="title-medium"></h2>
         <p id="descricao" class="body-medium pt-3"></p>
         <hr />
         <p id="data" class="label-small text-muted"></p>
         <p id="editora" class="label-small text-muted"></p>
+        <p id="paginas" class="label-small text-muted"></p>
       </div>
     </div>
   </section>
