@@ -1,14 +1,74 @@
 import { usuarioLogado } from "../account-service/account-service.js";
+import { Bd } from "../lists-service/lists-service.js";
 
 //buscar quadrinho pelo id
 async function getComicsById(id) {
-    const response = await fetch('../../database/comicsDb.json');
+    const response = await fetch(`https://www.googleapis.com/books/v1/volumes/${id}?key=AIzaSyBGxlb9mZ7p0q9N8oYydATS0-_u7Acv-lA`);
     const data = await response.json();
-    let comics = data.comics;
-    let result = comics.filter(comic => {
-        return comic.id === id;
-    });
-    return result[0];
+    return data;
+}
+
+//adicionar quadrinho a uma lista
+function addComicsToList(comic, listId) {
+    if (!comic || !comic.volumeInfo) {
+        console.error('Quadrinho inválido.');
+        return;
+    }
+
+    let user = usuarioLogado();
+    let bd = new Bd();
+    let lista = bd.lerListasPorId(listId);
+    if (lista) {
+        //criar copia do quadrinho para adicionar na lista
+        const quadrinho = {
+            id: comic.id,
+            title: comic.volumeInfo.title,
+            image: comic.volumeInfo.imageLinks.thumbnail,
+            status: {
+                lido: false,
+                lendo: false,
+                queroLer: false
+            }
+        }
+
+        //verificar status do quadrinho e adicionar na lista
+        let status = getComicsStatus(comic.id);
+        let statusMap = {
+            'lido': 'lido',
+            'lendo': 'lendo',
+            'queroLer': 'queroLer'
+        }
+
+        if (status) {
+            quadrinho.status[status] = true;
+            let existingComic = lista.quadrinhos[status].find(item => item.id === quadrinho.id);
+            if (!existingComic) {
+                let statusName = statusMap[status];
+                for (let status in quadrinho.status) {
+                    if (status === statusName) {
+                        lista.quadrinhos[status].push(quadrinho);
+                        user.quadrinhos[status].push(quadrinho);
+                    }
+                }
+            }
+        } else {
+            quadrinho.status.queroLer = true;
+            let existingComic = lista.quadrinhos['queroLer'].find(item => item.id === quadrinho.id);
+            if (!existingComic) {
+                lista.quadrinhos['queroLer'].push(quadrinho);
+                user.quadrinhos['queroLer'].push(quadrinho);
+            }
+        }
+
+        let userListaIndex = user.listas.findIndex(item => item.id === listId);
+        if (userListaIndex !== -1) {
+            user.listas[userListaIndex] = lista;
+
+            //atualizar lista no localStorage e sessionStorage
+            localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
+            sessionStorage.setItem("usuario", JSON.stringify(user));
+        }
+    }
 }
 
 //adicionar quadrinho por status (lido, lendo, quero ler)
@@ -20,8 +80,8 @@ async function addComicsByStatus(status, id) {
             //criar copia do quadrinho para adicionar na lista
             const quadrinho = {
                 id: comic.id,
-                title: comic.title,
-                image: comic.image,
+                title: comic.volumeInfo.title,
+                image: comic.volumeInfo.imageLinks.thumbnail,
                 status: {
                     lido: false,
                     lendo: false,
@@ -74,9 +134,27 @@ async function addComicsByStatus(status, id) {
                     console.error('Status inválido.');
                     return;
             }
-            //salvar lista autalizada no localStorage
+
+            const statusMap = {
+                '1': 'lido',
+                '2': 'lendo',
+                '3': 'queroLer'
+            }
+
+            //sincronizar o status do quadrinho nas listas do usuário
+            let statusName = statusMap[status];
+            for (let lista of user.listas) {
+                for (let status in lista.quadrinhos) {
+                    let index = lista.quadrinhos[status].findIndex(item => item.id === quadrinho.id);
+                    if (index !== -1) {
+                        lista.quadrinhos[status].splice(index, 1);
+                        lista.quadrinhos[statusName].push(quadrinho);
+                    }
+                }
+            }
+
+            //salvar lista atualizada no localStorage e sessionStorage
             localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
-            //atualizar objeto de usuário no sessionStorage
             sessionStorage.setItem("usuario", JSON.stringify(user));
         } else {
             console.error('Quadrinho não encontrado.');
@@ -159,22 +237,22 @@ function getUserComicsByStatus(status) {
 //buscar status do quadrinho
 function getComicsStatus(id) {
     let usuario = usuarioLogado();
-    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
-    let status = null;
+    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+    // let status = null;
 
     let lido = user.quadrinhos.lido.find(item => item.id === id);
     if (lido) {
-        status = 'Lido';
+        return 'lido';
     }
     let lendo = user.quadrinhos.lendo.find(item => item.id === id);
     if (lendo) {
-        status = 'Lendo';
+        return 'lendo';
     }
     let queroLer = user.quadrinhos.queroLer.find(item => item.id === id);
     if (queroLer) {
-        status = 'Quero ler';
+        return 'queroLer';
     }
-    return status;
+    return null;
 }
 
-export { getComicsById, addComicsByStatus, getAllUserComics, removeComicsById, getUserComicsByStatus, getComicsStatus };
+export { getComicsById, addComicsByStatus, getAllUserComics, removeComicsById, getUserComicsByStatus, getComicsStatus, addComicsToList };
