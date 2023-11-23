@@ -41,6 +41,12 @@ section {
 }
 
 
+
+#aparecer {
+    display: none;
+}
+
+
 /* FOOTER CSS */
 footer {
     display: flex;
