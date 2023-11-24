@@ -50,6 +50,7 @@
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
     --bs-danger: #BA1A1A;
+    --bs-success: #28A745;
     --danger-light: #FFDAD6;
     --danger-dark: #410002;
     --bs-light: #FBF8FD;
@@ -76,6 +77,7 @@
     --bs-info-bg-subtle: #cff4fc;
     --bs-warning-bg-subtle: #fff3cd;
     --bs-danger-bg-subtle: #f8d7da;
+    --bs-success-bg-subtle: #BFFFDE;
     --bs-light-bg-subtle: #fcfcfd;
     --bs-dark-bg-subtle: #ced4da;
     --bs-primary-border-subtle: #7988F0;
@@ -8391,6 +8393,10 @@ a.text-tertiary:hover {
     color: var(--bs-danger) !important
 }
 
+.text-success {
+    color: var(--bs-success) !important
+}
+
 .text-danger-dark {
     color: var(--danger-dark) !important
 }
@@ -10445,6 +10451,10 @@ button.bg-dark:hover {
 
 .bg-danger-subtle {
     background-color: var(--bs-danger-bg-subtle) !important;
+}
+
+.bg-success-subtle {
+    background-color: var(--bs-success-bg-subtle) !important
 }
 
 .bg-light-subtle {
