@@ -8,7 +8,14 @@ window.onload = () => {
   var btnCadastrar = document.getElementById("btn-cadastrar");
 
   btnCadastrar.addEventListener("click", (event) => {
-    cadastrarUsuario(username.value, email.value, senha.value);
-    window.location.href = "../login/login-page.html"
+    event.preventDefault();
+    if(username.value !== "" && email.value !== "" && senha.value !== ""){      
+      cadastrarUsuario(username.value, email.value, senha.value);
+      document.getElementById("success").classList.remove("inactive");
+      document.getElementById("error").classList.add("inactive");
+    } else {
+      document.getElementById("error").classList.remove("inactive");
+      document.getElementById("success").classList.add("inactive");
+    }
   });
 };

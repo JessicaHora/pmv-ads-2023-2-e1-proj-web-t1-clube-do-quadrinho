@@ -61,3 +61,8 @@ form.cadastrar{
   display: flex;
   flex-direction: column;
 }
+
+
+.inactive{
+  display: none;
+}
