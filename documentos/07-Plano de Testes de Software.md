@@ -37,6 +37,23 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Responsável pela elaboração do caso de Teste | Nico |
 
 
+
+# Plano de Testes de Software Editar Lista
+
+[Apresente os cenários de testes a serem utilizados na realização dos testes da aplicação. Escolha cenários de testes que demonstrem os requisitos sendo atendidos. ]
+
+Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
+
+|Caso de Teste    | CT-01 - Verificar o funcionamento editar lista |
+|:---|:---|
+| Requisitos Associados | RF-02:	O sistema deve oferecer uma funcionalidade de pesquisa para permitir ao usuário encontrar e descobrir quadrinhos. |
+| Objetivo do Teste | Verificar se o filtro de pesquisa está recuperando e apresentando os dados inseridos pelo usuário. |
+| Passos | **1.** Acessar o navegador. 		   **2.** Informar o endereço do site.		  **3.** Clicar e digitar no fitlro de pesquisa um termo de título, autor ou editora de quadrinhos e verificar se o resultado é exibido na página. |
+| Critérios de êxito | Os dados inseridos no filtro de pesquisa devem buscar quadrinhos relacionados ao termo pesquisado. |
+| Responsável pela elaboração do caso de Teste | Marcos |
+
+
+
  
 > **Links Úteis**:
 > - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
