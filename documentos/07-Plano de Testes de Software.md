@@ -44,13 +44,31 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 
 Os testes funcionais a serem realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste]
 
-|Caso de Teste    | CT-01 - Verificar o funcionamento editar lista |
+|Caso de Teste    | CT-01 - Verificar o funcionamento criar lista |
 |:---|:---|
-| Requisitos Associados | RF-02:	O sistema deve oferecer uma funcionalidade de pesquisa para permitir ao usuário encontrar e descobrir quadrinhos. |
-| Objetivo do Teste | Verificar se o filtro de pesquisa está recuperando e apresentando os dados inseridos pelo usuário. |
-| Passos | **1.** Acessar o navegador. 		   **2.** Informar o endereço do site.		  **3.** Clicar e digitar no fitlro de pesquisa um termo de título, autor ou editora de quadrinhos e verificar se o resultado é exibido na página. |
-| Critérios de êxito | Os dados inseridos no filtro de pesquisa devem buscar quadrinhos relacionados ao termo pesquisado. |
+| Requisitos Associados | RF-02:	O sistema deve oferecer uma funcionalidade que o usuario possa criar suas lista. |
+| Objetivo do Teste | Verificar se esta sendo inserido dados pelo usuário. |
+| Passos | **1.** Acessar o navegador. 		   **2.** Informar o endereço do site.		  **3.** Clicar em criar lista|
+| Critérios de êxito | Os dados inseridos vão aparecer na pagina index.html. |
 | Responsável pela elaboração do caso de Teste | Marcos |
+
+
+|Caso de Teste    | CT-02 - Verificar funcionalidade editar lista |
+|:---|:---|
+| Requisitos Associados | RF-08:	O sistema deve permitir ao usuário que posso editar suas listas. 
+| Objetivo do Teste | Verificar se esta editando suas lista com exito. |
+| Passos | **1.** Acessar o navegador		**2.** Informar o endereço do site.		**3.** Clicar em criar lista. **4.** Clicar em editar lista |
+| Critérios de êxito | Após clicar no quadrinho desejado, o usuario devera ser direcinado para pagina index.html, pagina listas |
+| Responsável pela elaboração do caso de Teste | Marcos |
+
+|Caso de Teste    | CT-03 - Verificar funcionalidade excluir lista |
+|:---|:---|
+| Requisitos Associados | RF-06:	O sistema deve permitir ao usuário que exclua sua lista.  |
+| Objetivo do Teste | Verificar se a funcionalidade de excluir lista esta sendo execultada corretamente. |
+| Passos | **1.** Acessar o navegador		**2.** Informar o endereço do site.		**3.** Clicar em criar lista. **4.** Clicar em excluir lista |
+| Critérios de êxito | Deve ocorrer uma validação após o usuário clicar na opção de status desejada, e em seguida deve aparecer uma mensagem. |
+| Responsável pela elaboração do caso de Teste | Marcos |
+
 
 
 
