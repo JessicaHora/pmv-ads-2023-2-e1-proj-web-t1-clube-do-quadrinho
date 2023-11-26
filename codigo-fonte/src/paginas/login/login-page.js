@@ -18,8 +18,8 @@ var entrar = (event) => {
     if (senha === usuario.senha) {
       usuario.senha = criptografar(usuario.senha);
 
-      usuario = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
-      sessionStorage.setItem("usuario", JSON.stringify(usuario));
+      usuario = buscarUsuarioPorEmail(email);
+      localStorage.setItem("usuario-logado", JSON.stringify(usuario));
       window.location.href = "../paginaQuadrinho/quadrinho.html"
     } else {
       document.getElementById("error").classList.remove("inactive");
