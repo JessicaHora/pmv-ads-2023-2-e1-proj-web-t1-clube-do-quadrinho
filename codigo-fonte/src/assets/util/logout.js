@@ -2,5 +2,5 @@ import { logout } from "../../services/account-service/account-service.js"
 
 document.getElementById("sair").addEventListener("click", () => {
     logout();
-    window.location.href = "../login/login-page.html";
+    window.location.replace(`${window.location.origin}/codigo-fonte/src/paginas/login/login-page.html`);
 });
