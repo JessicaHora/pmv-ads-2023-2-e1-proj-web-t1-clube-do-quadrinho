@@ -69,6 +69,25 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Deve ocorrer uma validação após o usuário clicar na opção de status desejada, e em seguida deve aparecer uma mensagem. |
 | Responsável pela elaboração do caso de Teste | Marcos |
 
+# Plano de Testes de Software Cadastro e log-in
+
+|Caso de Teste    | CT-01 - Verificar o funcionamento da funcionalidade de cadastro |
+|:---|:---|
+| Requisitos Associados | RF-04:	O sistema deve permitir ao usuário cadastrar uma conta |
+| Objetivo do Teste | Verificar se o usuário consegue cadastrar uma conta. Verificar mensagens de erro e de sucesso. |
+| Passos | **1.** Acessar o navegador. 		   **2.** Informar o endereço do site.		  **3.** Clicar em `Criar conta`      **4.** Preencher campos      **5.** Clicar em `Cadastrar`
+| Critérios de êxito | Usuário é cadastrado caso os campos estejam preenchidos de forma correta (não vazios, e o e-mail tem o formato correto). Pós cadastro uma mensagem de sucesso é exibida. Caso algum campo esteja em branco, uma mensagem de erro deve aparecer.|
+| Responsável pela elaboração do caso de Teste | Thiago |
+
+
+|Caso de Teste    | CT-02 - Verificar o funcionamento da funcionalidade de login |
+|:---|:---|
+| Requisitos Associados | RF-09:	O sistema deve permitir ao usuário fazer o login da sua conta |
+| Objetivo do Teste | Verificar se o usuário consegue cadastrar uma conta. Verificar mensagens de erro e de sucesso. |
+| Passos | **1.** Acessar o navegador. 		   **2.** Informar o endereço do site.		  **3.** Clicar em `Entrar`      **4.** Preencher campos      **5.** Clicar em `Enviar`
+| Critérios de êxito | Usuário acessa com sucesso sua conta caso seu nome de usuário e senha coincidam. Pós ingressar na conta, usuário é redirecionado à página de quadrinhos. Caso algum campo esteja em branco, uma mensagem de erro deve aparecer.|
+| Responsável pela elaboração do caso de Teste | Thiago |
+
 
 
 
