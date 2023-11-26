@@ -16,7 +16,7 @@ class Bd {
 
     //ler uma lista especifica do usuario
     lerListasPorId(id) {
-        return this.usuario.listas.find(lista => lista.id === id);
+        return localStorage.getItem(`usuario-${this.usuario.id}`) ? JSON.parse(localStorage.getItem(`usuario-${this.usuario.id}`)).listas.find(lista => lista.id === id) : [];
     }
 
     //atualizar uma lista
@@ -57,7 +57,9 @@ class Bd {
                 if (lista.quadrinhos[status].some(quadrinho => quadrinho.id === quadrinhoId)) {
                     lista.quadrinhos[status] = lista.quadrinhos[status].filter(quadrinho => quadrinho.id !== quadrinhoId);
                     //atualizando o usuario no local storage
-                    atualizarUsuario();
+                    localStorage.setItem(`usuario-${this.usuario.id}`, JSON.stringify(this.usuario));
+                    //atualizar objeto de usuário no sessionStorage
+                    sessionStorage.setItem("usuario", JSON.stringify(this.usuario));
                 }
             });
         }
@@ -65,7 +67,7 @@ class Bd {
 
     // funcao para recuperar dados do localstorage;
     recuperarDadosStorage() {
-        return this.usuario.listas;
+        return localStorage.getItem(`usuario-${this.usuario.id}`) ? JSON.parse(localStorage.getItem(`usuario-${this.usuario.id}`)).listas : [];
     }
 }
 

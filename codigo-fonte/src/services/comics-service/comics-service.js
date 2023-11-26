@@ -74,7 +74,7 @@ function addComicsToList(comic, listId) {
 //adicionar quadrinho por status (lido, lendo, quero ler)
 async function addComicsByStatus(status, id) {
     try {
-        let user = await usuarioLogado();
+        let user = usuarioLogado();
         let comic = await getComicsById(id);
         if (comic) {
             //criar copia do quadrinho para adicionar na lista
@@ -123,7 +123,7 @@ async function addComicsByStatus(status, id) {
                     break;
                 case '4':
                     removeComicsById(id, status);
-                    localStorage.removeItem(`usuario-${user.email}-quadrinho${id}-excluir`);
+                    localStorage.removeItem(`usuario-${user.id}-quadrinho${id}-excluir`);
                     let quadrinhoStatus = document.getElementById('adicionarQuadrinho')
                     let excluirOption = quadrinhoStatus.querySelector('option[value="4"]');
                     if (excluirOption) {
@@ -153,6 +153,8 @@ async function addComicsByStatus(status, id) {
                 }
             }
 
+            //atualizar o localStorage e sessionStorage
+
             //salvar lista atualizada no localStorage e sessionStorage
             localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
             sessionStorage.setItem("usuario", JSON.stringify(user));
@@ -168,7 +170,7 @@ async function addComicsByStatus(status, id) {
 function getAllUserComics() {
     try {
         let usuario = usuarioLogado();
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
         if (user && user.quadrinhos) {
             const { lido, lendo, queroLer } = user.quadrinhos;
             return { lido, lendo, queroLer };
@@ -198,10 +200,10 @@ async function removeComicsById(id) {
             user.quadrinhos.queroLer = user.quadrinhos.queroLer.filter(item => item.id !== comic.id);
             removed = true;
         } if (removed) {
-            localStorage.setItem(`usuario-${user.email}`, JSON.stringify(user));
+            localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
         }
         //salvar lista autalizada no localStorage
-        localStorage.setItem(`usuario-${user.email}`, JSON.stringify(user));
+        localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
         //atualizar objeto de usuário no sessionStorage
         sessionStorage.setItem("usuario", JSON.stringify(user));
     }
@@ -211,7 +213,7 @@ async function removeComicsById(id) {
 function getUserComicsByStatus(status) {
     try {
         let usuario = usuarioLogado();
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
         if (user && user.quadrinhos) {
             switch (status) {
                 case '1':
@@ -255,4 +257,20 @@ function getComicsStatus(id) {
     return null;
 }
 
-export { getComicsById, addComicsByStatus, getAllUserComics, removeComicsById, getUserComicsByStatus, getComicsStatus, addComicsToList };
+function getAverageRating(id) {
+    let ratings = JSON.parse(localStorage.getItem('ratings')) || [];
+    let comicRatings = ratings[id];
+
+    if (!comicRatings) {
+        return;
+    }
+
+    document.getElementById('avaliacoes-quadrinhos').classList.remove('d-none');
+    let ratingsArray = Object.values(comicRatings);
+    let sum = ratingsArray.reduce((a, b) => a + Number(b), 0);
+    let average = sum / ratingsArray.length;
+
+    return average.toFixed(1);
+}
+
+export { getComicsById, addComicsByStatus, getAllUserComics, removeComicsById, getUserComicsByStatus, getComicsStatus, addComicsToList, getAverageRating };

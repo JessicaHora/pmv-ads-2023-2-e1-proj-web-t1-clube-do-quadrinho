@@ -4,7 +4,6 @@ import {
 import * as comicsService from "../../services/comics-service/comics-service.js";
 import { Bd } from "../../services/lists-service/lists-service.js"
 
-let linksId = document.querySelectorAll('a[href*="quadrinho.html?id="]');
 let urlParams = new URLSearchParams(window.location.search);
 let id = urlParams.get("id");
 let quadrinhoStatus = document.getElementById("adicionarQuadrinho");
@@ -12,10 +11,41 @@ let toastElement = document.querySelector('.toast');
 let addListaModal = document.getElementById('addListaModal');
 let bd = new Bd();
 
-//renderizar página de quadrinho
+window.addEventListener('load', function () {
+  if (!id && usuarioLogado()) {
+    window.location.href = '../Homepage/Homepage.html'
+  } else if (!id && !usuarioLogado()) {
+    window.location.href = '../login/login-page.html'
+  }
+});
+
+function renderElement(id, prefix, value) {
+  document.getElementById(id).innerHTML = `${prefix}: ${value || 'Não informado'}`;
+}
+
+function loadComicsData(comic) {
+  let thumbnailUrl = comic.volumeInfo.imageLinks.thumbnail.replace('zoom=1', 'zoom=0').replace('http', 'https');
+  let publishedDate = new Date(comic.volumeInfo.publishedDate);
+  let day = String(publishedDate.getDate()).padStart(2, '0');
+  let month = String(publishedDate.getMonth() + 1).padStart(2, '0');
+  let year = publishedDate.getFullYear();
+  let date = `${day}/${month}/${year}`;
+  let ratings = comicsService.getAverageRating(comic.id);
+
+  document.head.querySelector('title').innerHTML = comic.volumeInfo.title;
+  document.getElementById('capa-quadrinho').src = thumbnailUrl;
+  document.getElementById('titulo-quadrinho').innerHTML = comic.volumeInfo.title;
+  document.getElementById('criadores').innerHTML = comic.volumeInfo.authors.join(', ');
+  document.getElementById('avaliacoes-quadrinhos').innerHTML = `${ratings}`;
+  document.getElementById('descricao').innerHTML = comic.volumeInfo.description;
+  renderElement('data', 'Data de lançamento', date);
+  renderElement('editora', 'Editora', comic.volumeInfo.publisher);
+  renderElement('paginas', 'Número de páginas', comic.volumeInfo.pageCount);
+
+}
+
 function renderComicsPage(comic) {
   if (!usuarioLogado()) {
-    //navbar
     let login = document.createElement('a');
     login.className = 'nav-link';
     login.href = '../login/login-page.html';
@@ -28,102 +58,32 @@ function renderComicsPage(comic) {
     navItem1.appendChild(login);
     let navItem2 = document.querySelectorAll('.nav-item')[1];
     navItem2.appendChild(cadastro);
-    //content
-    document.head.querySelector('title').innerHTML = comic.volumeInfo.title;
-    let thumbnailUrl = comic.volumeInfo.imageLinks.thumbnail;
-    thumbnailUrl = thumbnailUrl.replace('zoom=1', 'zoom=0');
-    document.getElementById('capa-quadrinho').src = thumbnailUrl;
-    document.getElementById('titulo-quadrinho').innerHTML = comic.volumeInfo.title;
-    document.getElementById('criadores').innerHTML = comic.volumeInfo.authors.join(', ');
-    document.getElementById('descricao').innerHTML = comic.volumeInfo.description;
-    let publishedDate = new Date(comic.volumeInfo.publishedDate);
-    let day = String(publishedDate.getDate()).padStart(2, '0');
-    let month = String(publishedDate.getMonth() + 1).padStart(2, '0');
-    let year = publishedDate.getFullYear();
-    let date = `${day}/${month}/${year}`;
-    if (comic.volumeInfo.publishedDate) {
-      document.getElementById('data').innerHTML = `Data de lançamento: ${date}`
-    } else {
-      document.getElementById('data').innerHTML = `Data de lançamento: Não informado`
-    }
-    if (comic.volumeInfo.publisher) {
-      document.getElementById('editora').innerHTML = `Editora: ${comic.volumeInfo.publisher}`;
-    } else {
-      document.getElementById('editora').innerHTML = `Editora: Não informado`;
-    }
-    if (comic.volumeInfo.pageCount) {
-      document.getElementById('paginas').innerHTML = `Número de páginas: ${comic.volumeInfo.pageCount}`;
-    } else {
-      document.getElementById('paginas').innerHTML = `Número de páginas: Não informado`;
-    }
     let content = document.querySelector('.actionBox');
     content.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'h-100', 'bg-tertiary-light', 'text-center', 'body-small', 'p-2', 'rounded', 'mt-2');
+    loadComicsData(comic);
   } else {
-    //navbar
-    document.getElementById('home').classList.remove('d-none');
-    document.getElementById('listas').classList.remove('d-none');
-    document.getElementById('sair').classList.remove('d-none');
-    //content
-    document.getElementById('adicionarQuadrinho').classList.remove('d-none')
-    document.getElementById('adicionarLista').classList.remove('d-none');
-    document.getElementById('avaliarQuadrinho').classList.remove('d-none');
-    document.head.querySelector('title').innerHTML = comic.volumeInfo.title;
-    let thumbnailUrl = comic.volumeInfo.imageLinks.thumbnail;
-    thumbnailUrl = thumbnailUrl.replace('zoom=1', 'zoom=0');
-    document.getElementById('capa-quadrinho').src = thumbnailUrl;
-    document.getElementById('titulo-quadrinho').innerHTML = comic.volumeInfo.title;
-    // document.getElementById('avaliacoes-quadrinhos').innerHTML = comic.volumeInfo.ratingsCount;
-    document.getElementById('criadores').innerHTML = comic.volumeInfo.authors.join(', ');
-    document.getElementById('descricao').innerHTML = comic.volumeInfo.description;
-    let publishedDate = new Date(comic.volumeInfo.publishedDate);
-    let day = String(publishedDate.getDate()).padStart(2, '0');
-    let month = String(publishedDate.getMonth() + 1).padStart(2, '0');
-    let year = publishedDate.getFullYear();
-    let date = `${day}/${month}/${year}`;
-    if (comic.volumeInfo.publishedDate) {
-      document.getElementById('data').innerHTML = `Data de lançamento: ${date}`
-    } else {
-      document.getElementById('data').innerHTML = `Data de lançamento: Não informado`
-    }
-    if (comic.volumeInfo.publisher) {
-      document.getElementById('editora').innerHTML = `Editora: ${comic.volumeInfo.publisher}`;
-    } else {
-      document.getElementById('editora').innerHTML = `Editora: Não informado`;
-    }
-    if (comic.volumeInfo.pageCount) {
-      document.getElementById('paginas').innerHTML = `Número de páginas: ${comic.volumeInfo.pageCount}`;
-    } else {
-      document.getElementById('paginas').innerHTML = `Número de páginas: Não informado`;
-    }
+    loadComicsData(comic);
+    ['home', 'listas', 'sair'].forEach(id => document.getElementById(id).classList.remove('d-none'));
+    ['adicionarQuadrinho', 'adicionarLista', 'avaliarQuadrinho'].forEach(id => document.getElementById(id).classList.remove('d-none'));
     document.querySelector('.message').style.display = 'none';
 
     //salvar o valor do select no localStorage
-    let user = usuarioLogado();
     let quadrinhoId = comic.id;
     quadrinhoStatus.addEventListener('change', () => {
-      localStorage.setItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption`, quadrinhoStatus.value);
+      localStorage.setItem(`usuario-${user.id}-quadrinho-${quadrinhoId}-selectedOption`, quadrinhoStatus.value);
     });
     // buscar o valor do select no localStorage
-    let selectedOption = localStorage.getItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption`);
+    let selectedOption = localStorage.getItem(`usuario-${user.id}-quadrinho-${quadrinhoId}-selectedOption`);
     if (selectedOption) {
       quadrinhoStatus.value = selectedOption;
       quadrinhoStatus.querySelector(`option[value="${selectedOption}"]`).setAttribute('selected', 'selected');
     }
     // remover o valor do select no localStorage quando o usuário sair da página
     window.addEventListener('beforeunload', () => {
-      localStorage.removeItem(`usuario-${user.email}-quadrinho-${quadrinhoId}-selectedOption}`);
+      localStorage.removeItem(`usuario-${user.id}-quadrinho-${quadrinhoId}-selectedOption}`);
     });
   }
-
 }
-
-linksId.forEach(link => {
-  link.addEventListener('click', (event) => {
-    event.preventDefault();
-    const id = link.href.split('id=')[1];
-    window.location.href = `quadrinho.html?id=${id}`;
-  });
-});
 
 comicsService.getComicsById(id)
   .then(comic => {
@@ -132,9 +92,27 @@ comicsService.getComicsById(id)
     console.error(err);
   });
 
+document.addEventListener('DOMContentLoaded', () => {
+  //busca a avaliacao do usuario no localStorage
+  let comicRatings = JSON.parse(localStorage.getItem('ratings')) || {};
+  let user = usuarioLogado();
+  let userId = user.id;
+  let comicId = id;
+
+  if (comicRatings[comicId] && comicRatings[comicId][userId]) {
+    let rating = comicRatings[comicId][userId];
+    let stars = document.querySelectorAll('#avaliarQuadrinho .bi-star');
+
+    for (let i = 0; i < rating; i++) {
+      stars[i].classList.add('active');
+      stars[i].classList.replace('bi-star', 'bi-star-fill');
+    }
+  }
+});
 
 //verificação da opção excluir no select
-let excluirOption = JSON.parse(localStorage.getItem(`usuario-${usuarioLogado.email}-quadrinho-${id}-excluir`));
+let usuario = usuarioLogado();
+let excluirOption = JSON.parse(localStorage.getItem(`usuario-${usuario.id}-quadrinho-${id}-excluir`));
 if (excluirOption === true) {
   if (!quadrinhoStatus.querySelector('option[value="4"]')) {
     const excluirOption = document.createElement('option');
@@ -147,6 +125,7 @@ if (excluirOption === true) {
 //atualização do elemento select
 function updateSelect() {
   let status = quadrinhoStatus.value;
+  let user = usuarioLogado();
   let excluirOption = quadrinhoStatus.querySelector('option[value="4"]');
   if ((status === '1' || status === '2' || status === '3') && !excluirOption) {
     excluirOption = document.createElement('option');
@@ -154,18 +133,18 @@ function updateSelect() {
     excluirOption.value = '4';
     excluirOption.text = 'Excluir';
     quadrinhoStatus.appendChild(excluirOption);
-    localStorage.setItem(`usuario-${usuarioLogado.email}-quadrinho-${id}-excluir`, JSON.stringify(true));
+    localStorage.setItem(`usuario-${user.id}-quadrinho-${id}-excluir`, JSON.stringify(true));
   } else if (status !== '1' && status !== '2' && status !== '3' && excluirOption) {
     quadrinhoStatus.querySelector('option[value=""]').disabled = true;
     quadrinhoStatus.querySelector('option[value=""]').selected = true;
     quadrinhoStatus.removeChild(excluirOption);
-    localStorage.removeItem(`usuario-${usuarioLogado.email}-quadrinho-${id}-excluir`);
+    localStorage.removeItem(`usuario-${user.id}-quadrinho-${id}-excluir`);
   }
 }
 
-window.addEventListener('load', () => {
+window.onload = function () {
   updateSelect();
-});
+}
 
 quadrinhoStatus.addEventListener('change', async () => {
   let status = quadrinhoStatus.value;
@@ -229,11 +208,22 @@ modalElement.addEventListener('show.bs.modal', function () {
 
 //esvaziar o modal de adicionar quadrinho ao fechar
 let modalElementEmpty = document.getElementById('addlista');
-modalElementEmpty.addEventListener('hidden.bs.modal', function (event) {
+modalElementEmpty.addEventListener('hidden.bs.modal', function () {
   let tabela = document.querySelector('tbody');
   tabela.innerHTML = '';
 });
 
+let isRedirected = false;
+document.querySelector('#novaLista a').addEventListener('click', function () {
+  localStorage.setItem('quadrinhoParaAdicionar', id);
+  isRedirected = true;
+});
+
+window.addEventListener('beforeunload', function () {
+  if (!isRedirected) {
+    localStorage.removeItem('quadrinhoParaAdicionar');
+  }
+});
 
 
 function carregarListaQuadrinho() {
@@ -310,3 +300,52 @@ addListaModal.addEventListener('click', function () {
     return;
   }
 })
+
+//avaliacao do quadrinho
+let stars = document.querySelectorAll('.bi-star');
+stars.forEach((star, index) => {
+  star.addEventListener('mouseover', () => {
+    for (let i = 0; i <= index; i++) {
+      stars[i].classList.replace('bi-star', 'bi-star-fill');
+      stars[i].classList.add('hover');
+    }
+  });
+
+  star.addEventListener('mouseout', () => {
+    stars.forEach(star => {
+      if (!star.classList.contains('active')) {
+        star.classList.replace('bi-star-fill', 'bi-star');
+      }
+      star.classList.remove('hover');
+    })
+  });
+});
+
+let avaliarInputs = document.querySelectorAll('#avaliarQuadrinho input');
+avaliarInputs.forEach((input, index) => {
+  input.addEventListener('click', function () {
+    let user = usuarioLogado();
+    let rating = this.value;
+    let ratings = JSON.parse(localStorage.getItem('ratings')) || {};
+    let userId = user.id;
+    let comicId = id;
+
+    if (!ratings[comicId]) {
+      ratings[comicId] = {};
+    }
+
+    ratings[comicId][userId] = rating;
+    localStorage.setItem('ratings', JSON.stringify(ratings));
+
+    stars.forEach(star => {
+      star.classList.remove('active');
+      star.classList.replace('bi-star-fill', 'bi-star');
+    });
+
+    for (let i = 0; i <= index; i++) {
+      stars[i].classList.add('active');
+      stars[i].classList.replace('bi-star', 'bi-star-fill');
+    }
+  });
+});
+

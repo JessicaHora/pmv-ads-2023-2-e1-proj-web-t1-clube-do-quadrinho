@@ -54,9 +54,11 @@ section {
 
 .quadrinho-avaliar {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    direction: rtl;
 }
 
 .quadrinho-avaliar input {
@@ -70,6 +72,11 @@ section {
 .quadrinho-avaliar i {
     font-size: 1.5em;
     color: #adb5bd;
+}
+
+.bi-star-fill.hover,
+.bi-star-fill.active {
+    color: #ffc107;
 }
 
 .message {
@@ -105,6 +112,11 @@ section {
 
 #novaLista a:hover {
     color: #495057;
+}
+
+#avaliacoes-quadrinhos {
+    width: 66px;
+    height: auto;
 }
 
 /* FOOTER CSS */
