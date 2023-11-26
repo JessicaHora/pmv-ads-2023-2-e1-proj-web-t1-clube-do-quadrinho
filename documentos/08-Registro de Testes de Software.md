@@ -20,7 +20,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 |:---|:---|
 | Resultados obtidos | O sistema deve permitir ao usuário que posso editar suas listas. |
 | Responsável pela execução do caso de Teste | Marcos |
-|![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20143916-editar%20lista.png)|
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/f798c502-91a5-4fe5-9070-4bdea7b8eea7
 
 |Caso de Teste    | CT-03 - Verificar funcionalidade excluir lista |
 |:---|:---|
