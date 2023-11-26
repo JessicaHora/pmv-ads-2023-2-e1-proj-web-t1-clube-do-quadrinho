@@ -12,8 +12,8 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 |:---|:---|
 | Resultados obtidos | O sistema deve oferecer uma funcionalidade que o usuario possa criar suas listas.  |
 | Responsável pela execução do caso de Teste | Marcos |
-|![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20144341.png)
-|![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20142921-lista.png)
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/e8db678a-db41-4624-92a0-66282ddae0a0
 
 
 |Caso de Teste    | CT-02 -  Funcionalidade de Editar Lista |
