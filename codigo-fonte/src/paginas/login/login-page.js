@@ -17,6 +17,8 @@ var entrar = (event) => {
     usuario.senha = descriptografar(usuario.senha);
     if (senha === usuario.senha) {
       usuario.senha = criptografar(usuario.senha);
+
+      usuario = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
       sessionStorage.setItem("usuario", JSON.stringify(usuario));
       window.location.href = "../paginaQuadrinho/quadrinho.html"
     } else {

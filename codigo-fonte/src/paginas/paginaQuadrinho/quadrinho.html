@@ -26,8 +26,8 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <!-- Search Bar -->
           <form class="d-flex me-lg-auto col-lg-5" role="search">
-            <input id="queryName" class="form-control" type="search"
-              placeholder="Pesquise por título, autor, editora.." aria-label="Search" />
+            <input id="queryName" class="form-control" type="search" placeholder="Pesquise por título, autor, editora.."
+              aria-label="Search" />
             <button id="search" class="btn btn-secondary" type="submit">
               <i class="bi bi-search"></i>
             </button>
@@ -52,7 +52,7 @@
     <div class="row content">
       <div class="col-sm-10 col-md-3">
         <img id="capa-quadrinho" class="img-fluid img-thumbnail capa-quadrinho" src="../../assets/img/capaQuadrinho.png"
-          alt="capa quadrinho" />
+          alt="capa quadrinho"/>
         <div class="actionBox">
           <a class="message" href="../login/login-page.html">Faça login para adicionar e avaliar quadrinhos.</a>
           <!-- avaliar quadrinho -->
@@ -69,7 +69,7 @@
             <label for="star3">
               <i class="bi bi-star"></i>
             </label>
-            <input type="radio" id="4" name="quadrinho-avaliar" value="4" />
+            <input type="radio" id="star4" name="quadrinho-avaliar" value="4" />
             <label for="star4">
               <i class="bi bi-star"></i>
             </label>
@@ -102,7 +102,8 @@
             Adicionar à lista
           </button>
           <!-- Modal adiocionar quadrinho à lista-->
-          <div class="modal modal-lg fade" data-bs-backdrop="static" id="addlista" tabindex="-1" aria-labelledby="addlista" aria-hidden="true" data-bs-back>
+          <div class="modal modal-lg fade" data-bs-backdrop="static" id="addlista" tabindex="-1"
+            aria-labelledby="addlista" aria-hidden="true" data-bs-back>
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
@@ -113,7 +114,7 @@
                 </div>
                 <div class="modal-body">
                   <div id="novaLista" class="px-2 bg-light mb-3">
-                    <a class="text-decoration-none title-large" href="./lista.html">
+                    <a class="text-decoration-none title-large" href="../paginaListas/novaLista/nova-lista.html">
                       <i class="bi bi-folder-plus pe-2"></i>
                       Criar nova lista
                     </a>
@@ -136,13 +137,11 @@
           </div>
         </div>
       </div>
-      <div class="col-sm-10 col-md-8 flex-column align-self-start">
-        <div class="d-flex flex-column">
-          <h1 id="titulo-quadrinho" class="headline-large mb-0"></h1>
-          <!-- <p id="avaliacoes-quadrinhos" class="me-3 title-small"></p> -->
-        </div>
-        
-        <h2 id="criadores" class="title-medium"></h2>
+      <div class="col-sm-10 col-md-8 align-self-start">
+        <h1 id="titulo-quadrinho" class="display-medium mb-0"></h1>
+        <h2 id="criadores" class="title-medium mb-3"></h2>
+        <p id="avaliacoes-quadrinhos"
+          class="text-center rounded title-large bg-primary-light text-white p-2 d-none"></p>
         <p id="descricao" class="body-medium pt-3"></p>
         <hr />
         <p id="data" class="label-small text-muted"></p>

@@ -48,7 +48,7 @@ function usuarioLogado() {
 }
 
 function logout() {
-  sessionStorage.clear();
+  sessionStorage.removeItem("usuario");
 }
 
 export {
