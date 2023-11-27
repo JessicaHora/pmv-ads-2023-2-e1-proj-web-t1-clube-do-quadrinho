@@ -38,6 +38,12 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 |![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145611.png)|
 |![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145831.png)|
 
+|Caso de Teste    | CT-01 - Verificar o funcionamento do filtro de pesquisa |
+|:---|:---|
+| Resultados obtidos | Filtro de pesquisa funciona perfeitamente com termos chave (nomes de quadrinho, autores, etc.), e não com letras isoladas. |
+| Responsável pela elaboração do caso de Teste | Nico |
+| Responsável pela execução do caso de Teste | Thiago Bastani |
+|Caso de sucesso|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/b2b96b3f-c5df-4374-af02-728910659c91|
 
 
 
