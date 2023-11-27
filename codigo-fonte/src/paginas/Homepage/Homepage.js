@@ -43,9 +43,7 @@ function renderizarQuadrinho(quadrinhos, id) {
 
 function renderizarQuadrinhos() {
     let usuario = usuarioLogado();
-    
-    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}` )) || {};
-    console.log(user);
+    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}` )) || {};
     renderizarQuadrinho(user.quadrinhos.lido, 'quadrinhos-lidos');
     renderizarQuadrinho(user.quadrinhos.lendo, 'quadrinhos-lendo');
     renderizarQuadrinho(user.quadrinhos.queroLer, 'quadrinhos-queroler');

@@ -44,16 +44,14 @@
 |------|--------------------------|------------|
 |RF-01   |O sistema deve permitir ao usuário registrar avaliação aos quadrinhos.   |Média   |
 |RF-02   |O sistema deve oferecer uma funcionalidade de pesquisa para permitir ao usuário encontrar e descobrir quadrinhos.   |Alta   |
-| RF-03  |O sistema deve permitir ao usuário verificar o progresso de leitura de um quadrinho.   |Baixa   |
-|RF-04   |O sistema deve permitir ao usuário cadastrar uma conta.   |Alta   |
-|RF-05   |O sistema deve oferecer ao usuário uma página geral com todos os quadrinhos registrados e separados nas categorias de lidos, lendo e a ler.   |Alta   |
-|RF-06   |O sistema deve permitir ao usuário registrar quadrinhos como lidos, lendo e a ler.   |Alta   |
-|RF-07   |O sistema deve oferecer uma funcionalidade de filtro/pesquisa na página de quadrinhos registrados.   |Média   |
-|RF-08   |O sistema deve permitir ao usuário visualizar as informações dos quadrinhos.   |Média   |
-|RF-09   |O sistema deve permitir ao usuário fazer o login da sua conta.   |Alta   |
-|RF-10   |O sistema deve permitir o usuário visualizar  e interagir com suas listas criadas.   |Alta   |
-|RF-11   |O sistema deve permitir o usuário criar, editar e deletar listas de quadrinhos customizadas.    |Alta   |
-|RF-12   |O sistema deve permitir o usuário adicionar quadrinhos à listas criadas.   |Alta   |
+|RF-03   |O sistema deve permitir ao usuário cadastrar uma conta.   |Alta   |
+|RF-04   |O sistema deve oferecer ao usuário uma página geral com todos os quadrinhos registrados e separados nas categorias de lidos, lendo e a ler.   |Alta   |
+|RF-05   |O sistema deve permitir ao usuário registrar quadrinhos como lidos, lendo e a ler.   |Alta   |
+|RF-06   |O sistema deve permitir ao usuário visualizar as informações dos quadrinhos.   |Média   |
+|RF-07   |O sistema deve permitir ao usuário fazer o login da sua conta.   |Alta   |
+|RF-08   |O sistema deve permitir o usuário visualizar  e interagir com suas listas criadas.   |Alta   |
+|RF-09   |O sistema deve permitir o usuário criar, editar e deletar listas de quadrinhos customizadas.    |Alta   |
+|RF-10   |O sistema deve permitir o usuário adicionar quadrinhos à listas criadas.   |Alta   |
 
 
 **Prioridade: Alta / Média / Baixa. 

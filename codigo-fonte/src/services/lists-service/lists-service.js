@@ -8,43 +8,37 @@ class Bd {
     //criar uma nova lista
     criarLista(lista) {
         let usuario = usuarioLogado(); 
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
         user.listas.push(lista);
         //atualizando o usuario no local storage
-        localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
-        //atualizar objeto de usuário no sessionStorage
-        sessionStorage.setItem("usuario", JSON.stringify(user));
+        localStorage.setItem(`usuario-${usuario.email}`, JSON.stringify(user));
     }
 
     //ler uma lista especifica do usuario
     lerListasPorId(id) {
-        let user = usuarioLogado();
-        return localStorage.getItem(`usuario-${this.usuario.id}`) ? JSON.parse(localStorage.getItem(`usuario-${this.usuario.id}`)).listas.find(lista => lista.id === id) : [];
+        return localStorage.getItem(`usuario-${this.usuario.email}`) ? JSON.parse(localStorage.getItem(`usuario-${this.usuario.email}`)).listas.find(lista => lista.id === id) : [];
     }
 
     //atualizar uma lista
     atualizarLista(listaId, novaLista) {
         let usuario = usuarioLogado();
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
         let lista = user.listas.find(lista => lista.id === listaId);
         Object.assign(lista, novaLista);
         //atualizando o usuario no local storage
-        localStorage.setItem(`usuario-${this.usuario.id}`, JSON.stringify(user));
-        //atualizar objeto de usuário no sessionStorage
-        sessionStorage.setItem("usuario", JSON.stringify(this.usuario));
+        localStorage.setItem(`usuario-${this.usuario.email}`, JSON.stringify(user));
     }
 
     //excluir uma lista
     excluirLista(listaId) {
         let usuario = usuarioLogado();
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
         let toastConfirmacao = new bootstrap.Toast(document.getElementById('toastConfirmacao'), { autohide: false });
         toastConfirmacao.show();
 
         document.getElementById('btnConfirmar').addEventListener('click', () => {
             user.listas = user.listas.filter(lista => lista.id !== listaId);
-            localStorage.setItem(`usuario-${this.usuario.id}`, JSON.stringify(user));
-            sessionStorage.setItem("usuario", JSON.stringify(this.usuario));
+            localStorage.setItem(`usuario-${this.usuario.email}`, JSON.stringify(user));
             toastConfirmacao.hide();
             //toast de sucesso
             let toastSucesso = new bootstrap.Toast(document.querySelector('.toastSucesso'));
@@ -58,15 +52,14 @@ class Bd {
     //excluir qudrinho de uma lista
     excluirQuadrinhoLista(listaId, quadrinhoId) {
         let usuario = usuarioLogado();
-        let lista = usuario.listas.find(lista => lista.id === listaId);
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
+        let lista = user.listas.find(lista => lista.id === listaId);
         if (lista) {
             ['lido', 'lendo', 'queroLer'].forEach(status => {
                 if (lista.quadrinhos[status].some(quadrinho => quadrinho.id === quadrinhoId)) {
                     lista.quadrinhos[status] = lista.quadrinhos[status].filter(quadrinho => quadrinho.id !== quadrinhoId);
                     //atualizando o usuario no local storage
-                    localStorage.setItem(`usuario-${usuario.id}`, JSON.stringify(usuario));
-                    //atualizar objeto de usuário no sessionStorage
-                    sessionStorage.setItem("usuario", JSON.stringify(usuario));
+                    localStorage.setItem(`usuario-${usuario.email}`, JSON.stringify(user));
                 }
             });
         }
@@ -74,7 +67,7 @@ class Bd {
 
     // funcao para recuperar dados do localstorage;
     recuperarDadosStorage() {
-        return localStorage.getItem(`usuario-${this.usuario.id}`) ? JSON.parse(localStorage.getItem(`usuario-${this.usuario.id}`)).listas : [];
+        return localStorage.getItem(`usuario-${this.usuario.email}`) ? JSON.parse(localStorage.getItem(`usuario-${this.usuario.email}`)).listas : [];
     }
 }
 

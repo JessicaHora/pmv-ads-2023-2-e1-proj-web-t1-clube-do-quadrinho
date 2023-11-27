@@ -21,7 +21,7 @@ function renderizarQuadrinhosLista(id, status) {
         p.classList.remove('d-none');
     } else {
         p.classList.add('d-none');
-        div.className = "row d-flex"
+        div.className = "row col-12 d-flex"
         lista.quadrinhos[status].forEach(comic => {
             document.title = `${lista.titulo}`;
             let card = document.createElement('div');

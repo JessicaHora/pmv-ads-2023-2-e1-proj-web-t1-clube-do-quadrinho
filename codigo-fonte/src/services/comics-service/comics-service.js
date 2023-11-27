@@ -15,7 +15,7 @@ function addComicsToList(comic, listId) {
         return;
     }
     let usuario = usuarioLogado();
-    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
     let bd = new Bd();
     let lista = bd.lerListasPorId(listId);
     if (lista) {
@@ -69,7 +69,7 @@ function addComicsToList(comic, listId) {
             user.listas[userListaIndex] = lista;
 
             //atualizar lista no localStorage e sessionStorage
-            localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
+            localStorage.setItem(`usuario-${usuario.email}`, JSON.stringify(user));
         }
     }
 }
@@ -78,7 +78,7 @@ function addComicsToList(comic, listId) {
 async function addComicsByStatus(status, id) {
     try {
         let usuario = usuarioLogado();
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
         let comic = await getComicsById(id);
         if (comic) {
             //criar copia do quadrinho para adicionar na lista
@@ -157,11 +157,8 @@ async function addComicsByStatus(status, id) {
                 }
             }
 
-            //atualizar o localStorage e sessionStorage
-
-            //salvar lista atualizada no localStorage e sessionStorage
-            localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
-            sessionStorage.setItem("usuario", JSON.stringify(user));
+            //salvar lista atualizada no localStorage 
+            localStorage.setItem(`usuario-${usuario.email}`, JSON.stringify(user));
         } else {
             console.error('Quadrinho não encontrado.');
         }
@@ -174,7 +171,7 @@ async function addComicsByStatus(status, id) {
 function getAllUserComics() {
     try {
         let usuario = usuarioLogado();
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
         if (user && user.quadrinhos) {
             const { lido, lendo, queroLer } = user.quadrinhos;
             return { lido, lendo, queroLer };
@@ -192,7 +189,7 @@ function getAllUserComics() {
 async function removeComicsById(id) {
     let comic = await getComicsById(id);
     let usuario = usuarioLogado();
-    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
     if (comic) {
         let removed = false;
         if (user.quadrinhos.lido.some(item => item.id === comic.id)) {
@@ -205,12 +202,10 @@ async function removeComicsById(id) {
             user.quadrinhos.queroLer = user.quadrinhos.queroLer.filter(item => item.id !== comic.id);
             removed = true;
         } if (removed) {
-            localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
+            localStorage.setItem(`usuario-${usuario.email}`, JSON.stringify(user));
         }
         //salvar lista autalizada no localStorage
-        localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
-        //atualizar objeto de usuário no sessionStorage
-        sessionStorage.setItem("usuario", JSON.stringify(user));
+        localStorage.setItem(`usuario-${usuario.email}`, JSON.stringify(user));
     }
 }
 
@@ -218,7 +213,7 @@ async function removeComicsById(id) {
 function getUserComicsByStatus(status) {
     try {
         let usuario = usuarioLogado();
-        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
         if (user && user.quadrinhos) {
             switch (status) {
                 case '1':
@@ -244,7 +239,7 @@ function getUserComicsByStatus(status) {
 //buscar status do quadrinho
 function getComicsStatus(id) {
     let usuario = usuarioLogado();
-    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
+    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.email}`));
     // let status = null;
 
     let lido = user.quadrinhos.lido.find(item => item.id === id);

@@ -43,13 +43,12 @@ function buscarUsuarioPorEmail(email) {
 }
 
 function usuarioLogado() {
-  var usuario = JSON.parse(localStorage.getItem("usuario"));
+  var usuario = JSON.parse(localStorage.getItem("usuarioLogado"));
   return usuario;
 }
 
-// console.log(usuarioLogado());
 function logout() {
-  localStorage.removeItem("usuario");
+  localStorage.removeItem("usuarioLogado");
 }
 
 export {

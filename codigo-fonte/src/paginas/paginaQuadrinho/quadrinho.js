@@ -67,22 +67,6 @@ function renderComicsPage(comic) {
     ['home', 'listas', 'sair'].forEach(id => document.getElementById(id).classList.remove('d-none'));
     ['adicionarQuadrinho', 'adicionarLista', 'avaliarQuadrinho'].forEach(id => document.getElementById(id).classList.remove('d-none'));
     document.querySelector('.message').style.display = 'none';
-
-    //salvar o valor do select no localStorage
-    let quadrinhoId = comic.id;
-    quadrinhoStatus.addEventListener('change', () => {
-      localStorage.setItem(`usuario${user.id}-quadrinho-${quadrinhoId}-selectedOption`, quadrinhoStatus.value);
-    });
-    // buscar o valor do select no localStorage
-    let selectedOption = localStorage.getItem(`usuario-${user.id}-quadrinho-${quadrinhoId}-selectedOption`);
-    if (selectedOption) {
-      quadrinhoStatus.value = selectedOption;
-      quadrinhoStatus.querySelector(`option[value="${selectedOption}"]`).setAttribute('selected', 'selected');
-    }
-    // remover o valor do select no localStorage quando o usuário sair da página
-    window.addEventListener('beforeunload', () => {
-      localStorage.removeItem(`usuario-${user.id}-quadrinho-${quadrinhoId}-selectedOption}`);
-    });
   }
 }
 
@@ -111,16 +95,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 });
 
-//verificação da opção excluir no select
-let usuario = usuarioLogado();
-let excluirOption = JSON.parse(localStorage.getItem(`usuario-${usuario.id}-quadrinho-${id}-excluir`));
-if (excluirOption === true) {
-  if (!quadrinhoStatus.querySelector('option[value="4"]')) {
-    const excluirOption = document.createElement('option');
-    excluirOption.value = '4';
-    excluirOption.text = 'Excluir';
-    quadrinhoStatus.appendChild(excluirOption);
-  }
+window.onload = function () {
+  updateSelect();
 }
 
 //atualização do elemento select
@@ -143,8 +119,16 @@ function updateSelect() {
   }
 }
 
-window.onload = function () {
-  updateSelect();
+//verificação da opção excluir no select
+let usuario = usuarioLogado();
+let excluirOption = JSON.parse(localStorage.getItem(`usuario-${usuario.id}-quadrinho-${id}-excluir`));
+if (excluirOption === true) {
+  if (!quadrinhoStatus.querySelector('option[value="4"]')) {
+    const excluirOption = document.createElement('option');
+    excluirOption.value = '4';
+    excluirOption.text = 'Excluir';
+    quadrinhoStatus.appendChild(excluirOption);
+  }
 }
 
 quadrinhoStatus.addEventListener('change', async () => {
@@ -261,13 +245,7 @@ function carregarListaQuadrinho() {
     });
 
     let aTitulo = document.createElement('a');
-    aTitulo.className = 'ps-2 text-decoration-none text-dark'
-
-    // aTitulo.id = 'linkLista'
-    // aTitulo.addEventListener('click', function (event) {
-    //   event.preventDefault();
-    // })
-    // aTitulo.className = 'body-large'
+    aTitulo.className = 'ps-2 text-decoration-none text-dark';
     aTitulo.innerHTML = r.titulo;
     tdTitulo.appendChild(aTitulo);
 
@@ -350,3 +328,16 @@ avaliarInputs.forEach((input, index) => {
   });
 });
 
+//persistencia do select
+quadrinhoStatus.addEventListener('change', function () {
+  let user = usuarioLogado();
+  let status = this.value;
+  localStorage.setItem(`usuario-${user.id}-quadrinho-${id}-status`, status);
+});
+
+let user = usuarioLogado();
+let savedStatus = localStorage.getItem(`usuario-${user.id}-quadrinho-${id}-status`);
+if (savedStatus) {
+  quadrinhoStatus.value = savedStatus;
+  quadrinhoStatus.querySelector(`option[value="${savedStatus}"]`).setAttribute('selected', 'selected');
+}
