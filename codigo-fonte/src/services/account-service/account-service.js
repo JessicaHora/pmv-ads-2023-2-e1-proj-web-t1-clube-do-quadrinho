@@ -47,8 +47,6 @@ function usuarioLogado() {
   return usuario;
 }
 
-console.log(usuarioLogado());
-
 // console.log(usuarioLogado());
 function logout() {
   localStorage.removeItem("usuario");
