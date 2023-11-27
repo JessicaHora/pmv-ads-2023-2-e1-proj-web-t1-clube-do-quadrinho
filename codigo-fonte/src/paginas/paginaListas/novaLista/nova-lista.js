@@ -1,5 +1,12 @@
 import { Bd } from '../../../services/lists-service/lists-service.js';
 import { getComicsById, addComicsToList } from '../../../services/comics-service/comics-service.js';
+import { usuarioLogado } from "../../../services/account-service/account-service.js";
+
+window.addEventListener('load', function () {
+    if (!usuarioLogado()) {
+     window.location.href = '../../login/login-page.html'
+   }
+});
 
 class Registro {
     constructor(titulo, descricao) {

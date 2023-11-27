@@ -1,5 +1,10 @@
 import { usuarioLogado } from "../../services/account-service/account-service.js";
 
+window.addEventListener('load', function () {
+     if (!usuarioLogado()) {
+      window.location.href = '../login/login-page.html'
+    }
+});
 
 function renderizarQuadrinho(quadrinhos, id) {
     let div = document.getElementById(id);
