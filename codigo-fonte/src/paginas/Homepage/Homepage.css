@@ -38,12 +38,6 @@ body {
 
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
-
 /* CONTENT CSS */
 main {
     flex: 1 1 auto;

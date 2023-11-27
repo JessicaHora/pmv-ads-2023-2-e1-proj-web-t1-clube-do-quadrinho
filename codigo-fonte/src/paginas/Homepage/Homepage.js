@@ -8,7 +8,7 @@ function renderizarQuadrinho(quadrinhos, id) {
         p.classList.remove('d-none');
     } else {
         p.classList.add('d-none');
-        div.className = "row col-11 d-flex"
+        div.className = "row col-12 d-flex"
         quadrinhos.forEach(comic => {
             let card = document.createElement('div');
             card.className = "card col-lg-2 col-md-3 col-sm-4 m-3 p-0 shadow-sm"
