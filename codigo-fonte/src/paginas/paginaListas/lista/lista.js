@@ -52,6 +52,7 @@ function renderizarQuadrinhosLista(id, status) {
 
 function renderizarLista() {
     let lista = bd.lerListasPorId(idLista);
+    document.title = `${lista.titulo}`;
     document.querySelector('h1').innerHTML = `${lista.titulo}`;
     document.getElementById('descricao').textContent = `${lista.descricao}`
     renderizarQuadrinhosLista('quadrinhos-lidos', 'lido');
