@@ -1,4 +1,12 @@
 import { Bd } from "../../../services/lists-service/lists-service.js";
+import { usuarioLogado } from "../../../services/account-service/account-service.js";
+
+
+window.addEventListener('load', function () {
+    if (!usuarioLogado()) {
+        window.location.href = '../../login/login-page.html'
+    }
+});
 
 class Lista {
     constructor(titulo, descricao, quadrinhos) {
@@ -7,7 +15,6 @@ class Lista {
         this.quadrinhos = quadrinhos;
     }
 }
-
 let bd = new Bd();
 let urlParams = new URLSearchParams(window.location.search);
 let idLista = urlParams.get("id");
