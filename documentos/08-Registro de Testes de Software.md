@@ -32,6 +32,22 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/cd626d16-1aae-40a8-8d4e-865800ef18e1
 
 ---------------
+|Caso de Teste    | CT-08 -  Funcionalidade de Cadastro |
+|:---|:---|
+| Resultados obtidos | O sistema deve permitir ao úsuario cadastrar uma conta.  |
+| Responsável pela execução do caso de Teste | Jessica |
+
+caso de sucesso:
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/74804dbb-2267-42be-b069-f987ff51fd0a
+
+caso de erro:
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/e62e9dc1-bbeb-486c-b668-8555ab202bca
+
+
+---------------
 
 
 |Caso de Teste 04    | CT-04 -  Funcionalidade de adicionar quadrinhos á lista |
