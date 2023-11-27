@@ -88,13 +88,19 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 | Responsável pela elaboração do caso de Teste | Nico |
 | Responsável pela execução do caso de Teste | Thiago Bastani |
 
+---------------
+
 |Caso de Teste    | CT-11 - Verificar o funcionamento da funcionalidade de avaliação |
 |:---|:---|
 | Resultados obtidos | Usuário pode avaliar os quadrinhos com sucesso. |
 | Responsável pela elaboração do caso de Teste | Nico |
 | Responsável pela execução do caso de Teste | Thiago Bastani |
 
-![teste-avaliacao](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/9c9be524-86c2-449c-963d-25e876083c71)
+
+
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/fbe8d286-398a-4658-b2e9-141e0fb9f405
+
+
 
 ---------------
 
