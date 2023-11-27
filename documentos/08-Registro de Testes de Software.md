@@ -15,6 +15,7 @@ Os resultados dos testes funcionais realizados na aplicação são descritos a s
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/e8db678a-db41-4624-92a0-66282ddae0a0
 
+---------------
 
 |Caso de Teste    | CT-02 -  Funcionalidade de Editar Lista |
 |:---|:---|
@@ -23,6 +24,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/f798c502-91a5-4fe5-9070-4bdea7b8eea7
 
+---------------
+
 |Caso de Teste    | CT-03 - Verificar funcionalidade excluir lista |
 |:---|:---|
 | Resultados obtidos | O sistema deve permitir ao usuário que exclua sua lista. |
@@ -30,6 +33,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/90875297/cd626d16-1aae-40a8-8d4e-865800ef18e1
 
+---------------
 
 |Caso de Teste 04    | CT-04 -  Funcionalidade de adicionar quadrinhos á lista |
 |:---|:---|
@@ -38,13 +42,19 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 |![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145611.png)|
 |![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145831.png)|
 
+---------------
+
 |Caso de Teste    | CT-01 - Verificar o funcionamento do filtro de pesquisa |
 |:---|:---|
 | Resultados obtidos | Filtro de pesquisa funciona perfeitamente com termos chave (nomes de quadrinho, autores, etc.), e não com letras isoladas. |
 | Responsável pela elaboração do caso de Teste | Nico |
 | Responsável pela execução do caso de Teste | Thiago Bastani |
-|Caso de sucesso|https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/b2b96b3f-c5df-4374-af02-728910659c91|
 
+### Caso de sucesso
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/b2b96b3f-c5df-4374-af02-728910659c91
+### Caso de erro
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/f780b7e0-edea-4954-ab51-c867cbb55dcb
 
+---------------
 
 [Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
