@@ -53,6 +53,7 @@
 |RF-09   |O sistema deve permitir ao usuário fazer o login da sua conta.   |Alta   |
 |RF-10   |O sistema deve permitir o usuário visualizar  e interagir com suas listas criadas.   |Alta   |
 |RF-11   |O sistema deve permitir o usuário criar, editar e deletar listas de quadrinhos customizadas.    |Alta   |
+|RF-12   |O sistema deve permitir o usuário adicionar quadrinhos à listas criadas.   |Alta   |
 
 
 **Prioridade: Alta / Média / Baixa. 

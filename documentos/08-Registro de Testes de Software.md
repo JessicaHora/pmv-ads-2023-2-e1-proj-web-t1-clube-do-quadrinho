@@ -2,13 +2,10 @@
 
 Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
+Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. 
 
 
-# Plano de Teste de software Editar Lista
-
-
-|Caso de Teste    | CT-01 -  Funcionalidade de criar Lista |
+|Caso de Teste    | CT-05 - Verificar o funcionamento criar lista |
 |:---|:---|
 | Resultados obtidos | O sistema deve oferecer uma funcionalidade que o usuario possa criar suas listas.  |
 | Responsável pela execução do caso de Teste |  Jessica |
@@ -17,7 +14,8 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 
 ---------------
 
-|Caso de Teste    | CT-02 -  Funcionalidade de Editar Lista |
+
+|Caso de Teste    | CT-06 - Verificar funcionalidade editar lista  |
 |:---|:---|
 | Resultados obtidos | O sistema deve permitir ao usuário que posso editar suas listas. |
 | Responsável pela execução do caso de Teste |  Jessica |
@@ -26,7 +24,7 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 
 ---------------
 
-|Caso de Teste    | CT-03 - Verificar funcionalidade excluir lista |
+|Caso de Teste    |  CT-07 - Verificar funcionalidade excluir lista |
 |:---|:---|
 | Resultados obtidos | O sistema deve permitir ao usuário que exclua sua lista. |
 | Responsável pela execução do caso de Teste | Jessica |
@@ -35,12 +33,36 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 
 ---------------
 
+
 |Caso de Teste 04    | CT-04 -  Funcionalidade de adicionar quadrinhos á lista |
 |:---|:---|
 | Resultados obtidos | O sistema deve permitir ao usuário que  adicionar o quadrinho desejado na sua lista corretamente.  |
 | Responsável pela execução do caso de Teste | Jessica |
-|![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145611.png)|
-|![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145831.png)|
+
+![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145611.png)
+![image](https://github.com/JessicaHora/Studies/blob/main/Captura%20de%20tela%202023-11-26%20145831.png)
+
+---------------
+
+
+|Caso de Teste 05    | CT-05 - Verificar o funcionamento da funcionalidade de login |
+|:---|:---|
+| Resultados obtidos | Se os dados inseridos estiverem corretos e existirem, o login é bem sucedido. |
+| Responsável pela execução do caso de Teste | Nico |
+
+**Caso de sucesso:**
+![teste-login](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/99574248/1ec7933b-61ea-4409-9b15-5535bacefffa)
+**Casos de erro:**
+![teste-login-erro](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/99574248/be8a5575-e94a-437d-b232-15fc5cd1d60c)
+
+---------------
+
+|Caso de Teste 06    | CT-10 - Verificar o funcionamento da Homepage |
+|:---|:---|
+| Resultados obtidos | Após adicionar o quadrinho como uma das opções, o quadrinho é carregado na página Homepage na categoria adicionada. |
+| Responsável pela execução do caso de Teste | Nico |
+
+![teste-homepage](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/99574248/7d85a238-bdf4-4ad0-bcd6-5514e6ec2484)
 
 ---------------
 
@@ -50,11 +72,10 @@ https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do
 | Responsável pela elaboração do caso de Teste | Nico |
 | Responsável pela execução do caso de Teste | Thiago Bastani |
 
-### Caso de sucesso
+**Caso de sucesso**
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/b2b96b3f-c5df-4374-af02-728910659c91
-### Caso de erro
+**Caso de erro**
 https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/34927611/f780b7e0-edea-4954-ab51-c867cbb55dcb
 
 ---------------
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
