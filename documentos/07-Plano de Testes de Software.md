@@ -88,7 +88,15 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir. 
 | Critérios de êxito | Usuário acessa com sucesso sua conta caso seu nome de usuário e senha coincidam. Pós ingressar na conta, usuário é redirecionado à página de quadrinhos. Caso algum campo esteja em branco, uma mensagem de erro deve aparecer.|
 | Responsável pela elaboração do caso de Teste | Thiago |
 
+# Plano de Teste de Software Homepage
 
+|Caso de Teste    | CT-01 - Verificar o funcionamento da Homepage |
+|:---|:---|
+| Requisitos Associados | RF-02:	O sistema deve oferecer uma funcionalidade de separar os quadrinhos de acordo com cada categoria. |
+| Objetivo do Teste | Verificar se os titulos estão sendo adicionados na categoria informado pelo usuário. |
+| Passos | **1.** Acessar o navegador. 		   **2.** Informar o endereço do site.		  **3.** pesquisar determinado quadrinho. **4.** clicar em 'Adicionar'.  **5.** Escolher entre as opções. |
+| Critérios de êxito | Os  quadrinhos adicionados deverão ser apresentados na Homepage conforme cada opção escolhida pelo usuário. |
+| Responsável pela elaboração do caso de Teste | Jessica |
 
 
  
