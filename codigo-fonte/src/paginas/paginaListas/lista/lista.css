@@ -8,6 +8,10 @@
     color: #2B3BA0;
 }
 
+.navbar-nav {
+    --bs-nav-link-hover-color: #2B3BA0;
+}
+
 #queryName {
     border-radius: 0.3rem 0 0 0.3rem;
     border-style: unset;
@@ -18,30 +22,16 @@
 
 }
 
-.navbar-nav {
-    --bs-nav-link-hover-color: #2B3BA0;
-}
-
 #sair {
     cursor: pointer;
 }
 
-/*  */
-
-
 /* BODY CSS */
 body {
-    min-height: 180vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     position: relative;
-
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 /* CONTENT CSS */
@@ -56,27 +46,19 @@ main {
     padding: 0 3rem 0 3rem;
 }
 
-
-
-#aparecer {
-    display: none;
-}
-
-
 /* FOOTER CSS */
 footer {
     display: flex;
     flex: 0 1 auto;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    padding: 20px;
-    bottom: 0;
-    width: 100%;
+    padding: 2rem 0;
+    position: relative;
     color: #343a40;
     margin-top: 2rem;
 }
 
-@media screen and (max-width: 463px){
+@media screen and (max-width: 463px) {
     .content {
         padding: 0;
         margin: 0;

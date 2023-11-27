@@ -62,6 +62,7 @@ function renderComicsPage(comic) {
     content.classList.add('d-flex', 'justify-content-center', 'align-items-center', 'h-100', 'bg-tertiary-light', 'text-center', 'body-small', 'p-2', 'rounded', 'mt-2');
     loadComicsData(comic);
   } else {
+    let user = usuarioLogado();
     loadComicsData(comic);
     ['home', 'listas', 'sair'].forEach(id => document.getElementById(id).classList.remove('d-none'));
     ['adicionarQuadrinho', 'adicionarLista', 'avaliarQuadrinho'].forEach(id => document.getElementById(id).classList.remove('d-none'));
@@ -70,7 +71,7 @@ function renderComicsPage(comic) {
     //salvar o valor do select no localStorage
     let quadrinhoId = comic.id;
     quadrinhoStatus.addEventListener('change', () => {
-      localStorage.setItem(`usuario-${user.id}-quadrinho-${quadrinhoId}-selectedOption`, quadrinhoStatus.value);
+      localStorage.setItem(`usuario${user.id}-quadrinho-${quadrinhoId}-selectedOption`, quadrinhoStatus.value);
     });
     // buscar o valor do select no localStorage
     let selectedOption = localStorage.getItem(`usuario-${user.id}-quadrinho-${quadrinhoId}-selectedOption`);

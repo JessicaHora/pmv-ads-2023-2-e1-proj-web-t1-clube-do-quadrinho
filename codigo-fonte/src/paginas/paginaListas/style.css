@@ -21,6 +21,17 @@
     --bs-nav-link-hover-color: #2B3BA0;
 }
 
+#queryName {
+    border-radius: 0.3rem 0 0 0.3rem;
+    border-style: unset;
+}
+
+#search {
+    border-radius: 0 0.3rem 0.3rem 0;
+
+}
+
+
 #sair {
     cursor: pointer;
 }
@@ -39,7 +50,7 @@ body {
     position: relative;
 }
 
-section {
+main {
     flex: 1 1 auto;
 }
 
@@ -164,12 +175,10 @@ section {
 footer {
     display: flex;
     flex: 0 1 auto;
-    text-align: center;
+    align-items: center;
     justify-content: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    padding: 2rem 0;
+    position: relative;
     color: #343a40;
     margin-top: 2rem;
 }

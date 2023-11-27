@@ -14,8 +14,8 @@ function addComicsToList(comic, listId) {
         console.error('Quadrinho inválido.');
         return;
     }
-
-    let user = usuarioLogado();
+    let usuario = usuarioLogado();
+    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
     let bd = new Bd();
     let lista = bd.lerListasPorId(listId);
     if (lista) {
@@ -47,7 +47,9 @@ function addComicsToList(comic, listId) {
                 for (let status in quadrinho.status) {
                     if (status === statusName) {
                         lista.quadrinhos[status].push(quadrinho);
-                        user.quadrinhos[status].push(quadrinho);
+                        if (!user.quadrinhos[status].find(item => item.id === quadrinho.id)) {
+                            user.quadrinhos[status].push(quadrinho);
+                        }
                     }
                 }
             }
@@ -56,7 +58,9 @@ function addComicsToList(comic, listId) {
             let existingComic = lista.quadrinhos['queroLer'].find(item => item.id === quadrinho.id);
             if (!existingComic) {
                 lista.quadrinhos['queroLer'].push(quadrinho);
-                user.quadrinhos['queroLer'].push(quadrinho);
+                if (!user.quadrinhos['queroLer'].find(item => item.id === quadrinho.id)) {
+                    user.quadrinhos['queroLer'].push(quadrinho);
+                }
             }
         }
 
@@ -66,7 +70,6 @@ function addComicsToList(comic, listId) {
 
             //atualizar lista no localStorage e sessionStorage
             localStorage.setItem(`usuario-${user.id}`, JSON.stringify(user));
-            sessionStorage.setItem("usuario", JSON.stringify(user));
         }
     }
 }
@@ -74,7 +77,8 @@ function addComicsToList(comic, listId) {
 //adicionar quadrinho por status (lido, lendo, quero ler)
 async function addComicsByStatus(status, id) {
     try {
-        let user = usuarioLogado();
+        let usuario = usuarioLogado();
+        let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
         let comic = await getComicsById(id);
         if (comic) {
             //criar copia do quadrinho para adicionar na lista
@@ -187,7 +191,8 @@ function getAllUserComics() {
 //remover quadrinho por id
 async function removeComicsById(id) {
     let comic = await getComicsById(id);
-    let user = usuarioLogado();
+    let usuario = usuarioLogado();
+    let user = JSON.parse(localStorage.getItem(`usuario-${usuario.id}`));
     if (comic) {
         let removed = false;
         if (user.quadrinhos.lido.some(item => item.id === comic.id)) {

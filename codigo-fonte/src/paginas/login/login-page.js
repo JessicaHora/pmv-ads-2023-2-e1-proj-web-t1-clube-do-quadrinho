@@ -17,10 +17,9 @@ var entrar = (event) => {
     usuario.senha = descriptografar(usuario.senha);
     if (senha === usuario.senha) {
       usuario.senha = criptografar(usuario.senha);
-
-      usuario = buscarUsuarioPorEmail(email);
-      localStorage.setItem("usuario-logado", JSON.stringify(usuario));
-      window.location.href = "../paginaQuadrinho/quadrinho.html"
+      localStorage.setItem("usuario", JSON.stringify(usuario));
+      localStorage.setItem(`usuario-${usuario.id}`, JSON.stringify(usuario));
+      window.location.href = "../Homepage/Homepage.html"
     } else {
       document.getElementById("error").classList.remove("inactive");
     }

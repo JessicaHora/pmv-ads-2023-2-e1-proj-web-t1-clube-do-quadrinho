@@ -15,11 +15,7 @@ function carregarLista() {
 
     dadosBody = document.getElementsByTagName('tbody');
 
-    
-
     registros.forEach(function (r) {
-
-
         //Criar um novo elemento tr
         let tr = document.createElement('tr');
 
@@ -41,7 +37,6 @@ function carregarLista() {
         tdDescricao.className = 'col-6 flex-wrap title-large text-muted tituloDescricao';
         tdDescricao.innerHTML = r.descricao;
 
-    
         //Criar e configura o td do botão de editar
         let tdEditar = document.createElement('td');
         tdEditar.className = 'col-1 pt-3 editar'
@@ -49,44 +44,12 @@ function carregarLista() {
         tdEditar.style.cursor = 'pointer';
         tdEditar.title = 'Editar';
         let aEditar = document.createElement('a');
-        aEditar.addEventListener('click', function() {
-            //editarLista();
-            
-            let clickClose, clickAparecer;
-
-            clickClose = document.querySelector('#close')
-            clickAparecer = document.querySelector('#aparecer')
-
-            clickClose.style.display = "none";
-            clickAparecer.style.display = "block";
-
-            document.querySelector('.tituloEl').value = r.titulo;
-            document.querySelector('.descricaoEl').value = r.descricao;
-
-            document.querySelector('#salvarEditar').addEventListener('click', (el)=> {
-                    
-                el.preventDefault();
-
-                r.titulo = document.querySelector('.tituloEl').value;
-                r.descricao = document.querySelector('.descricaoEl').value;
-                
-
-                bd.atualizarLista(r.id, r);
-
-        
-                clickClose.style.display = "block";
-                clickAparecer.style.display = "none";
-                
-                window.location.reload();
-            })
-
-            
-
+        aEditar.addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.replace(`${window.location.origin}/codigo-fonte/src/paginas/paginaListas/editarLista/editar-lista.html?id=${r.id}`);
         }); //adiciona o evento de clique
         aEditar.innerHTML = '<i class="bi bi-pencil-fill"></i>';
         tdEditar.appendChild(aEditar);
-
-
 
         //Criar e configura o td do botão de excluir
         let tdExcluir = document.createElement('td');
@@ -99,12 +62,11 @@ function carregarLista() {
         aExcluir.href = '';
         let idLista = r.id;
         aExcluir.addEventListener('click', (function (id) {
-            return function(event) {
+            return function (event) {
                 event.preventDefault();
                 bd.excluirLista(id);
-
             }
-        })(idLista)); 
+        })(idLista));
         aExcluir.innerHTML = '<i class="bi bi-trash-fill"></i>';
         tdExcluir.appendChild(aExcluir);
 
@@ -118,12 +80,6 @@ function carregarLista() {
     });
     atualizarListaVazia();
 }
-
-// funcao editar 
-function editarLista() {
-    window.location.href = "./editarLista/editar-lista.html";
-}
-
 
 function atualizarListaVazia() {
     var tabela = document.querySelector('.guardaLista table tbody');

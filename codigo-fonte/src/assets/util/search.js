@@ -47,8 +47,8 @@ function renderComicsResults(query, page = 0, resultsPerPage = 10) {
                     comic.volumeInfo.imageLinks.thumbnail
             );
 
-            let content = document.querySelector(".content");
-            if (content) {
+            let content = document.querySelector(".content") || document.querySelector(".container");
+            if (content ) {
                 content.innerHTML = "";
             }
 

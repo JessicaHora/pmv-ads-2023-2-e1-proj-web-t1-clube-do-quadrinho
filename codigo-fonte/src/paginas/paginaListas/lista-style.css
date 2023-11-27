@@ -8,6 +8,16 @@
     color: #2B3BA0;
 }
 
+#queryName {
+    border-radius: 0.3rem 0 0 0.3rem;
+    border-style: unset;
+}
+
+#search {
+    border-radius: 0 0.3rem 0.3rem 0;
+
+}
+
 .navbar-nav {
     --bs-nav-link-hover-color: #2B3BA0;
 }
@@ -32,7 +42,7 @@ body {
 } */
 
 /* CONTENT CSS */
-section {
+main {
     flex: 1 1 auto;
 }
 
