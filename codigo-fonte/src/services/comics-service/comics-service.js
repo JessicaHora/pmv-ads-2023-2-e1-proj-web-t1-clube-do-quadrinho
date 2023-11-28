@@ -50,20 +50,55 @@ function addComicsToList(comic, listId) {
                         if (!user.quadrinhos[status].find(item => item.id === quadrinho.id)) {
                             user.quadrinhos[status].push(quadrinho);
                         }
+                        //toast de sucesso
+                        let toastElement = document.querySelector('.toast');
+                        let toast = new bootstrap.Toast(toastElement);
+                        document.querySelector('.toast-body').innerHTML = 'Quadrinho adicionado a lista com sucesso!';
+                        toast.show();
                     }
                 }
+            } else {
+                //toast de aviso
+                let toastElement = document.querySelector('.toast');
+                let toast = new bootstrap.Toast(toastElement);
+                document.querySelector('.toast-body').innerHTML = 'Quadrinho já adicionado a lista.';
+                toast.show();
             }
         } else {
             quadrinho.status.queroLer = true;
             let existingComic = lista.quadrinhos['queroLer'].find(item => item.id === quadrinho.id);
+
             if (!existingComic) {
                 lista.quadrinhos['queroLer'].push(quadrinho);
                 if (!user.quadrinhos['queroLer'].find(item => item.id === quadrinho.id)) {
                     user.quadrinhos['queroLer'].push(quadrinho);
                 }
+                //salvar status do quadrinho no localStorage
+                let quadrinhosStatus = document.getElementById('adicionarQuadrinho');
+                let queroLerOption = quadrinhosStatus.querySelector('option[value="3"]');
+                localStorage.setItem(`usuario-${usuario.id}-quadrinho-${comic.id}-status`, queroLerOption.value);
+                let savedStatus = localStorage.getItem(`usuario-${usuario.id}-quadrinho-${comic.id}-status`);
+                if (savedStatus) {
+                    quadrinhosStatus.value = savedStatus;
+                    quadrinhosStatus.querySelector('option[value="3"]').setAttribute('selected', 'selected');
+                } else {
+                    quadrinhosStatus.value = '3';
+                    quadrinhosStatus.querySelector('option[value="3"]').setAttribute('selected', 'selected');
+                }
+
+                //toast de sucesso
+                let toastElement = document.querySelector('.toast');
+                let toast = new bootstrap.Toast(toastElement);
+                document.querySelector('.toast-body').innerHTML = 'Quadrinho adicionado a lista com sucesso!';
+                toast.show();
+            } else {
+                //toast de aviso
+                let toastElement = document.querySelector('.toast');
+                let toast = new bootstrap.Toast(toastElement);
+                document.querySelector('.toast-body').innerHTML = 'Quadrinho já adicionado a lista.';
+                toast.show();
             }
         }
-
         let userListaIndex = user.listas.findIndex(item => item.id === listId);
         if (userListaIndex !== -1) {
             user.listas[userListaIndex] = lista;

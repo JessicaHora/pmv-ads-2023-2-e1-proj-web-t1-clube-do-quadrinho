@@ -265,12 +265,7 @@ addListaModal.addEventListener('click', function () {
         let modal = bootstrap.Modal.getInstance(document.getElementById('addlista'));
         modal.hide();
 
-        //toast 
-        let toast = new bootstrap.Toast(toastElement);
-        setTimeout(() => {
-          document.querySelector('.toast-body').innerHTML = 'Quadrinho adicionado à lista com sucesso!';
-          toast.show();
-        }, 500);
+        
       })
       .catch(err => {
         console.error(err);
