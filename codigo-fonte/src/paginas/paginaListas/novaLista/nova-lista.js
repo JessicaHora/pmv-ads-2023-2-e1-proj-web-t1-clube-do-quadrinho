@@ -164,3 +164,10 @@ function validarQuadrinhoAdicionado() {
     document.querySelector('.toast-body').innerHTML = 'Quadrinho adicionado com sucesso!';
     toast.show();
 }
+
+let quadrinho = localStorage.getItem('quadrinhoParaAdicionar');
+window.addEventListener('beforeunload', function () {
+  if (quadrinho) {
+    localStorage.removeItem('quadrinhoParaAdicionar');
+  }
+});
