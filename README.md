@@ -36,7 +36,7 @@ O projeto consiste em desenvolver um sistema de organização de leitura de quad
 
 # Hospedagem
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+* https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/paginas/login/login-page.html
 
 # Código-Fonte
 
