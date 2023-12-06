@@ -1,6 +1,7 @@
 // objeto para tratar dos dados salvos;
 import { Bd } from "../../services/lists-service/lists-service.js";
 import { usuarioLogado } from "../../services/account-service/account-service.js";
+import { env } from "../../env.js";
 
 window.addEventListener('load', function () {
     if (!usuarioLogado()) {
@@ -33,7 +34,7 @@ function carregarLista() {
         aTitulo.href = `../lista/lista.html?id=${r.id}`;
         aTitulo.addEventListener('click', (event) => {
             event.preventDefault();
-            window.location.replace(`${window.location.origin}/codigo-fonte/src/paginas/paginaListas/lista/lista.html?id=${r.id}`);
+            window.location.replace(`${env.baseUrl}/paginas/paginaListas/lista/lista.html?id=${r.id}`);
         })
         aTitulo.innerHTML = r.titulo;
         tdTitulo.appendChild(aTitulo);
@@ -52,7 +53,7 @@ function carregarLista() {
         let aEditar = document.createElement('a');
         aEditar.addEventListener('click', function (event) {
             event.preventDefault();
-            window.location.replace(`${window.location.origin}/codigo-fonte/src/paginas/paginaListas/editarLista/editar-lista.html?id=${r.id}`);
+            window.location.replace(`${env.baseUrl}/paginas/paginaListas/editarLista/editar-lista.html?id=${r.id}`);
         }); //adiciona o evento de clique
         aEditar.innerHTML = '<i class="bi bi-pencil-fill"></i>';
         tdEditar.appendChild(aEditar);

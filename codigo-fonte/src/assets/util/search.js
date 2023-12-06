@@ -1,4 +1,5 @@
 import { API_KEY } from "../../env.js";
+import { env } from "../../env.js";
 
 //funcionalidade de pesquisa
 let queryName = document.querySelector("#queryName");
@@ -100,7 +101,7 @@ function renderComicsResults(query, page = 0, resultsPerPage = 10) {
                     title.addEventListener("click", (event) => {
                         event.preventDefault();
                         window.location.replace(
-                            `${window.location.origin}/codigo-fonte/src/paginas/paginaQuadrinho/quadrinho.html?id=${comic.id}`
+                            `${env.baseUrl}/paginas/paginaQuadrinho/quadrinho.html?id=${comic.id}`
                         );
                     });
                     title.style.textDecoration = "none";
