@@ -8,17 +8,21 @@
 
 O projeto consiste em desenvolver um sistema de organização de leitura de quadrinhos. Através dessa aplicação, os usuários poderão ter mais controle das suas coleções.
 
+<center>
+    <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/99574248/62f44f08-ebaa-4fc1-ac11-2bb4a9fa0149" alt="logo">
+</center>
+
 ## Integrantes
 
-* Jessica Hora dos Santos
-* Marcos Vinicio Araujo Almeida
-* Nico Rocha da Costa
-* Thiago Bastani Pontel Oliveira
-* Thiago Carvalho Sobroza
+- Jessica Hora dos Santos
+- Marcos Vinicio Araujo Almeida
+- Nico Rocha da Costa
+- Thiago Bastani Pontel Oliveira
+- Thiago Carvalho Sobroza
 
 ## Orientador
 
-* Joyce Christina de Paiva Carvalho
+- Joyce Christina de Paiva Carvalho
 
 # Documentação
 
@@ -36,12 +40,12 @@ O projeto consiste em desenvolver um sistema de organização de leitura de quad
 
 # Hospedagem
 
-* https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/paginas/login/login-page.html
+- https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/paginas/login/login-page.html
 
 # Código-Fonte
 
-* <a href="codigo-fonte/README.md">Código Fonte</a>
+- <a href="codigo-fonte/README.md">Código Fonte</a>
 
 # Apresentação
 
-* <a href="apresentacao/README.md">Apresentação do Projeto</a>
+- <a href="apresentacao/README.md">Apresentação do Projeto</a>
