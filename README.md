@@ -8,9 +8,9 @@
 
 O projeto consiste em desenvolver um sistema de organização de leitura de quadrinhos. Através dessa aplicação, os usuários poderão ter mais controle das suas coleções.
 
-<center>
+<div align="center">
     <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/assets/99574248/62f44f08-ebaa-4fc1-ac11-2bb4a9fa0149" alt="logo">
-</center>
+</div>
 
 ## Integrantes
 
