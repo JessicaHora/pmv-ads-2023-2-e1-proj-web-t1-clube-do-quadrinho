@@ -1,0 +1,66 @@
+/* NAVBAR CSS */
+.logo {
+    width: 2.3rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #2B3BA0;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #2B3BA0;
+}
+
+#queryName {
+    border-radius: 0.3rem 0 0 0.3rem;
+    border-style: unset;
+}
+
+#search {
+    border-radius: 0 0.3rem 0.3rem 0;
+
+}
+
+#sair {
+    cursor: pointer;
+}
+
+/* BODY CSS */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* CONTENT CSS */
+main {
+    flex: 1 1 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+}
+
+/* FOOTER CSS */
+footer {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    position: relative;
+    color: #343a40;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 463px) {
+    .content {
+        padding: 0;
+        margin: 0;
+    }
+}

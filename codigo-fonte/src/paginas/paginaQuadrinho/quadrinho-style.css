@@ -12,6 +12,20 @@
     --bs-nav-link-hover-color: #2B3BA0;
 }
 
+#queryName {
+    border-radius: 0.3rem 0 0 0.3rem;
+    border-style: unset;
+}
+
+#search {
+    border-radius: 0 0.3rem 0.3rem 0;
+
+}
+
+#sair {
+    cursor: pointer;
+}
+
 /*  */
 
 /* BODY CSS */
@@ -40,9 +54,11 @@ section {
 
 .quadrinho-avaliar {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
+    direction: rtl;
 }
 
 .quadrinho-avaliar input {
@@ -58,19 +74,64 @@ section {
     color: #adb5bd;
 }
 
+.bi-star-fill.hover,
+.bi-star-fill.active {
+    color: #ffc107;
+}
+
+.message {
+    color: #FBF8FD;
+    text-decoration: none;
+}
+
+.message:hover {
+    color: #e9ecef;
+}
+
+.toast-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.toast {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-right: 10px;
+}
+
+#novaLista a {
+    color: #1B1B1F;
+}
+
+#novaLista a:hover {
+    color: #495057;
+}
+
+#avaliacoes-quadrinhos {
+    width: 66px;
+    height: auto;
+}
+
 /* FOOTER CSS */
 footer {
     display: flex;
     flex: 0 1 auto;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
+    padding: 2rem 0;
     position: relative;
     color: #343a40;
     margin-top: 2rem;
 }
 
-@media screen and (max-width: 463px){
+@media screen and (max-width: 463px) {
     .content {
         padding: 0;
         margin: 0;

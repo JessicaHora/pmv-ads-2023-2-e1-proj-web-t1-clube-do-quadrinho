@@ -50,6 +50,7 @@
     --bs-info: #0dcaf0;
     --bs-warning: #ffc107;
     --bs-danger: #BA1A1A;
+    --bs-success: #28A745;
     --danger-light: #FFDAD6;
     --danger-dark: #410002;
     --bs-light: #FBF8FD;
@@ -76,6 +77,7 @@
     --bs-info-bg-subtle: #cff4fc;
     --bs-warning-bg-subtle: #fff3cd;
     --bs-danger-bg-subtle: #f8d7da;
+    --bs-success-bg-subtle: #BFFFDE;
     --bs-light-bg-subtle: #fcfcfd;
     --bs-dark-bg-subtle: #ced4da;
     --bs-primary-border-subtle: #7988F0;
@@ -3876,6 +3878,26 @@ fieldset:disabled .btn {
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem rgba(69, 84, 185, 0.5)
+}
+
+.btn-primary-light {
+    color: var(--primary);
+    background-color: var(--primary-lightest);
+    border-color: var(--primary-lightest);
+}
+
+.btn-primary-light:hover {
+    color: var(--primary-lightest);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+}
+
+.btn-primary-light.focus, 
+.btn-primary-light:focus {
+    color: var(--primary-lightest);
+    background-color: var(--primary-light);
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 .2rem rgba(255, 223, 224, .5)
 }
 
 .btn-secondary {
@@ -8368,7 +8390,11 @@ a.text-tertiary:hover {
 }
 
 .text-danger {
-    color: var(--danger) !important
+    color: var(--bs-danger) !important
+}
+
+.text-success {
+    color: var(--bs-success) !important
 }
 
 .text-danger-dark {
@@ -10313,7 +10339,7 @@ button.bg-tertiary:hover {
 }
 
 .bg-danger {
-    background-color: var(--danger) !important
+    background-color: var(--bs-danger) !important
 }
 
 .bg-danger-light {
@@ -10425,6 +10451,10 @@ button.bg-dark:hover {
 
 .bg-danger-subtle {
     background-color: var(--bs-danger-bg-subtle) !important;
+}
+
+.bg-success-subtle {
+    background-color: var(--bs-success-bg-subtle) !important
 }
 
 .bg-light-subtle {

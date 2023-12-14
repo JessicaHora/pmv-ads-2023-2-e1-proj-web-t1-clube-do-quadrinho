@@ -17,7 +17,6 @@
 1. Organização das leituras de quadrinhos.
 2. Avaliar e dar notas aos quadrinhos.
 3. Descoberta de novos quadrinhos.
-4. Saber o progresso de leitura.
 5. Ambiente digital simplificado, bem intuitivo, de fácil entendimento para organizar leituras de quadrinhos.
 </td>
 </tr>
@@ -29,10 +28,9 @@
 
 |EU COMO... `QUEM`               | QUERO/PRECISO ... `O QUE` |PARA ... `PORQUE`       |
 |--------------------------------|---------------------------|------------------------|
-| Leitor   |Organizar meus quadrinhos por gênero   |Adequar a forma que costumava organizar.    |
+| Leitor   |Organizar meus quadrinhos por gênero.   |Adequar a forma que costumava organizar.    |
 | Leitor   |Avaliar capítulos dos quadrinhos que leio.   |Deixar registrado minha experiência com aquele quadrinho.   |
-| Leitor   |Pesquisar quadrinhos por título, autor ou personagem.   |Descobrir novos quadrinhos para ler ou marcar como lido.   |
-| Leitor   |Verificar o progresso das minhas leituras.    |Saber qual capítulo do quadrinho que parei.   |
+| Leitor   |Pesquisar quadrinhos por título, autor ou editora.   |Descobrir novos quadrinhos para ler ou marcar como lido.   |
 | Leitor   |Organizar meus quadrinhos em uma estrutura simplificada   |Facilitar organização das minhas coleções e leituras.   |
 
 ## Requisitos do Projeto
@@ -44,14 +42,14 @@
 |------|--------------------------|------------|
 |RF-01   |O sistema deve permitir ao usuário registrar avaliação aos quadrinhos.   |Média   |
 |RF-02   |O sistema deve oferecer uma funcionalidade de pesquisa para permitir ao usuário encontrar e descobrir quadrinhos.   |Alta   |
-| RF-03  |O sistema deve permitir ao usuário verificar o progresso de leitura de um quadrinho.   |Baixa   |
-|RF-04   |O sistema deve permitir ao usuário cadastrar uma conta.   |Alta   |
-|RF-05   |O sistema deve oferecer ao usuário uma página geral com todos os quadrinhos registrados e separados nas categorias de lidos, lendo e a ler.   |Alta   |
-|RF-06   |O sistema deve permitir ao usuário registrar quadrinhos como lidos, lendo e a ler.   |Alta   |
-|RF-07   |O sistema deve oferecer uma funcionalidade de filtro/pesquisa na página de quadrinhos registrados.   |Média   |
-|RF-08   |O sistema deve permitir ao usuário visualizar as informações dos quadrinhos.   |Média   |
-|RF-09   |O sistema deve permitir ao usuário fazer o login da sua conta.   |Alta   |
-|RF-10   |O sistema deve permitir ao usuário criar listas individuais para registro de quadrinhos, para organização da forma que o usuário desejar (por gênero, personagem, etc.). A estrutura dos quadrinhos das listas deve seguir as categorias de lidos, lendo e a ler.   |Alta   |
+|RF-03   |O sistema deve permitir ao usuário cadastrar uma conta.   |Alta   |
+|RF-04   |O sistema deve oferecer ao usuário uma página geral com todos os quadrinhos registrados e separados nas categorias de lidos, lendo e a ler.   |Alta   |
+|RF-05   |O sistema deve permitir ao usuário registrar quadrinhos como lidos, lendo e a ler.   |Alta   |
+|RF-06   |O sistema deve permitir ao usuário visualizar as informações dos quadrinhos.   |Média   |
+|RF-07   |O sistema deve permitir ao usuário fazer o login da sua conta.   |Alta   |
+|RF-08   |O sistema deve permitir o usuário visualizar  e interagir com suas listas criadas.   |Alta   |
+|RF-09   |O sistema deve permitir o usuário criar, editar e deletar listas de quadrinhos customizadas.    |Alta   |
+|RF-10   |O sistema deve permitir o usuário adicionar quadrinhos à listas criadas.   |Alta   |
 
 
 **Prioridade: Alta / Média / Baixa. 

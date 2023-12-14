@@ -1,0 +1,191 @@
+/*********
+    * Formatação padrao do sistema 
+    *
+*****/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo {
+    width: 2.3rem;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show {
+    color: #2B3BA0;
+}
+
+.navbar-nav {
+    --bs-nav-link-hover-color: #2B3BA0;
+}
+
+#queryName {
+    border-radius: 0.3rem 0 0 0.3rem;
+    border-style: unset;
+}
+
+#search {
+    border-radius: 0 0.3rem 0.3rem 0;
+
+}
+
+
+#sair {
+    cursor: pointer;
+}
+
+.center {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main {
+    flex: 1 1 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 3rem 0 3rem;
+}
+
+.toastConfirmacao {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    width: auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#toastConfirmacao {
+    margin: auto;
+}
+
+#toastSucesso {
+    position: fixed;
+    top:6rem;
+    left: 1rem;
+    z-index: 9999;
+    width: 100%;
+}
+
+.toastSucesso {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    margin-right: 10px;
+}
+
+
+@keyframes seta {
+    from {
+        margin-left: 20px;
+    }
+
+    to {
+        margin-right: 40px;
+    }
+}
+
+.content .listaVazia {
+    position: relative;
+    width: 100%;
+    display: none; /* Ocultar por padrão */
+    justify-content: center;
+}
+
+.content .listaVazia.listaVazia--vazia {
+    display: flex; /* Mostrar quando a lista está vazia */
+}
+
+.content .listaVazia.listaVazia--vazia::after {
+    content: "Nenhuma lista cadastrada";
+    font-size: 21px;
+    padding: 10px 0;
+    animation: seta 1.5s ease-in 0s infinite alternate;
+}
+
+
+/*********
+    * Formatação guardaLista
+*****/
+.guardaLista {
+    width: 100%;
+    padding: 40px 0 20px;
+}
+
+#editar a {
+    color: #4555b9;
+}
+
+#editar a:hover {
+    color: #2B3BA0;
+}
+
+#excluir a {
+    color: #BA1A1A;
+}
+
+#excluir a:hover {
+    color: #410002;
+}
+
+#editar a i, #excluir a i {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+#editar a i:hover, #excluir a i:hover {
+    transform: scale(1.15);
+}
+
+#novaLista a {
+    color: #ffffff;
+}
+
+#novaLista a i {
+    color: #FFDDB6;
+}
+
+#novaLista {
+    float: right;
+}
+
+#titulo a {
+    text-decoration: none;
+}
+
+/* FOOTER CSS */
+footer {
+    display: flex;
+    flex: 0 1 auto;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    position: relative;
+    color: #343a40;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 463px){
+    .content {
+        padding: 0;
+        margin: 0;
+    }
+}

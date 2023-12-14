@@ -12,9 +12,9 @@ A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, 
 
 A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para definição do processo de desenvolvimento. A equipe é organizada da seguinte maneira:
 
-- Scrum Master: Cristiane Queiroz de Brito
+- Scrum Master: Thiago Bastani Pontel Oliveira
 - Product Owner: Nico Rocha da Costa
-- Equipe de Desenvolvimento: Jessica Hora dos Santos, Marcos Vinicio Araujo Almeida, Nico Rocha da Costa, Thiago Bastani Pontel Oliveira, Thiago Carvalho Sobroza, Cristiane Queiroz de Brito
+- Equipe de Desenvolvimento: Jessica Hora dos Santos, Marcos Vinicio Araujo Almeida, Nico Rocha da Costa, Thiago Bastani Pontel Oliveira, Thiago Carvalho Sobroza
 - Equipe de Design: Nico Rocha da Costa e Jessica Hora dos Santos
 
 ### Processo
@@ -66,7 +66,7 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 | Documentos do projeto       | GitHub          | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/tree/main/documentos                               |
 | Projeto de Interface        | Figma           | https://www.figma.com/proto/JIL7RZupf8ItrbUAHomdCg/Clube-do-Quadrinho?type=design&node-id=673-5060&t=W74h4DbU7a23R9ZP-1&scaling=contain&page-id=670%3A2405&starting-point-node-id=673%3A5060&mode=design |
 | Gerenciamento do Projeto    | GitHub Projects | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/635                                                                                   |
-| Hospedagem                  | GitHub Pages    | http://....                                                                                                                                   |
+| Hospedagem                  | GitHub Pages    | https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2023-2-e1-proj-web-t1-clube-do-quadrinho/                                                                                                                                   |
 
 ### Estratégia de Organização de Codificação
 
